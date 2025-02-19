@@ -1,0 +1,58 @@
+p{
+    /* color: sử dụng thuộc tính này để đặt màu cho văn bản */
+    color: blue;
+    color: #ff0055;
+    color: rgb(red, green, blue);
+}
+
+p{
+    /* text-align: sử dụng thuộc tính này để căn lề cho văn bản */
+    text-align: justify;
+    text-align: left;
+    text-align: right;
+    text-align: center;
+
+    /* text-indent: sử dụng thuộc tính này để thụt đầu đoạn văn bản */
+    text-indent: 20px;
+}
+
+h1{
+    /* text-decoration: sử dụng thuộc tính này để thiết lập hoặc gỡ bỏ hiệu ứng gạch ngang cho văn bản */
+    text-decoration: none;
+    text-decoration: overline;
+    text-decoration: underline;
+    text-decoration: line-through;
+
+    /* text-transform: sử dụng thuộc tính này để chuyển chữ hoa sang chữ thường */
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+
+    /* letter-spacing: sử dụng thuộc tính này để tăng hoặc giảm khoảng cách giữa các kí tự trong một từ */
+    letter-spacing: 2px;
+    letter-spacing: -2px;
+
+    /* word-spacing: sử dụng thuộc tính này để tăng hoặc giảm khoảng các giữa các từ trong văn bản */
+    word-spacing: 2px;
+    word-spacing: -2px;
+
+    /* line-height: sử dụng thuộc tính này để tăng hoặc giảm khoảng cách giữa các dòng trong văn bản */
+    line-height: 90%;
+    line-height: 200%;
+
+    /* direction: sử dụng thuộc tính này để xác định hướng viết văn bản từ trái sang phải hoặc từ phải sang trái */
+    direction: ltr;
+    direction: rtl;
+
+    /* 
+    text-shadow: hoff voff blur #000; tạo bóng đổ cho văn bản 
+    h-shadow: vị trí bóng ngang so với chữ, số âm sẽ đẩy lên và số dương sẽ đẩy xuống
+    v-shadow: vị trí bóng dọc so với chứ, số âm sẽ đẩy lui phía sau và số dương sẽ đẩy tới phía trước
+    blur-radius: độ nhòe của chữ bóng, tính bằng pixel
+    colorL màu sắc của bóng đổ
+    */
+    text-shadow: hoff voff blur #000;
+}
+
+
+

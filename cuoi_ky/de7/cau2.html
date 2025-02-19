@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        font-weight: bold;
+        margin: 0px auto;
+    }
+</style>
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td>Tháng: </td>
+                <td><input type="text" name="" id="month"></td>
+                <td>Năm: </td>
+                <td><input type="text" name="" id="year"></td>
+            </tr>
+            <tr>
+                <td>Số ngày: </td>
+                <td><input type="text" name="" id="result"></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="4">
+                    <input type="button" value="Hiển thị số ngày của tháng" onclick="check()">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function check()
+        {
+            var m = parseInt(document.getElementById("month").value);
+            var y = parseInt(document.getElementById("year").value);
+            if(isNaN(m) || isNaN(y) || m <= 0 || y <= 0)
+            {
+                alert("Vui lòng nhập năm hoặc tháng là một số nguyên dương!");
+                return;
+            }
+            if(m == 1 || m == 3 || m == 5 || m == 7 || m == 8 || m == 10 || m == 12)
+            {
+                document.getElementById("result").value = 30;
+                return;
+            }
+            if(m == 4 || m == 6 || m == 9 || m == 11)
+            {
+                document.getElementById("result").value = 31;
+                return;
+            }
+            if(m == 2)
+            {
+                if((y % 4 == 0 && y % 100 != 0) || (y % 400 == 0))
+                    document.getElementById("result").value = 29;
+                else
+                    document.getElementById("result").value = 28;
+            }
+        }
+    </script>
+</body>
+</html>

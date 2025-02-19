@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .td1{
+        width: 100px;
+    }
+</style>
+<body>
+    <form action="">
+        <table border="1px" cellspacing="0" align="center" >
+            <tr>
+                <td colspan="2" align="center">Kiểm tra</td>
+            </tr>
+            <tr>
+                <td class="td1">Nhập xâu</td>
+                <td><input type="text" name="" id="source_str" size="60"></td>
+            </tr>
+            <tr>
+                <td class="td1">Ký tự 1</td>
+                <td><input type="text" name="" id="character1" size="60"></td>
+            </tr>
+            <tr>
+                <td class="td1">Ký tự 2</td>
+                <td><input type="text" name="" id="character2" size="60"></td>
+            </tr>
+            <tr>
+                <td class="td1">Kết quả</td>
+                <td><input type="text" name="" id="result" size="60" readonly></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="reset" value="Xóa" onclick="reset_form()">
+                    <input type="button" value="Kiểm tra" onclick="check()">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function reset_form()
+        {
+            document.getElementsByTagName("form")[0].reset();
+        }
+        function check()
+        {
+            var str = document.getElementById("source_str").value;
+            var ch1 = document.getElementById("character1").value;
+            var ch2 = document.getElementById("character2").value;
+            var dem1 = 0, dem2 = 0;
+            for(var i = 0; i < str.length; i++)
+            {
+                if(ch1 == str[i])
+                    dem1++;
+                if(ch2 == str[i])
+                    dem2++;
+            }
+            if(dem1 == dem2)
+                document.getElementById("result").value = ch1 + " xuất hiện " + dem1 + " lần, " + ch2 + " xuất hiện " + dem2 + " lần, vậy số lượng bằng nhau";
+            else
+                document.getElementById("result").value = ch1 + " xuất hiện " + dem1 + " lần, " + ch2 + " xuất hiện " + dem2 + " lần, vậy số lượng không bằng nhau";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+body{
+    font-size: 18px;
+}
+header{
+    width: 100%;
+    display: flex;
+}
+header img{
+    margin: 10px;
+}
+#img1{
+    margin-right: 85px;
+}
+
+nav{
+    display: flex;
+    line-height: 40px;
+    background-color: black;
+    margin-bottom: 15px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    border-right: 2px solid white;
+    padding: 0px 10px;
+}
+
+#div0{
+    width: 30%;
+    margin-right: 10px;
+}
+#div1, #div2{
+    border: 2px solid black;
+    
+}
+#div1 h3{
+    text-align: center;
+    background-color: black;
+    color: white;
+    line-height: 34px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#div1 ul{
+    margin-top: 0px;
+}
+#div1 li{
+    font-weight: bold;
+    line-height: 30px;
+}
+
+#div2{
+    margin-top: 15px;
+}
+#div2 h3{
+    text-align: center;
+    background-color: black;
+    color: white;
+    line-height: 34px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#div3{
+    display: flex;
+    border: 2px solid black;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+#div3 h3{
+    width: 50%;
+    text-align: left;
+    line-height: 40px;
+    color: white;
+    background-color: black;
+    margin: 5px 0px 0px 0px;
+}
+#div3 a{
+    line-height: 10px;
+    text-align: right;
+    margin-top: 30px;
+    margin-left: 36%;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+
+#div4, #div5, section{
+    display: flex;
+}
+
+.sanpham{
+    text-align: center;
+    margin: 10px 50px;
+}
+.sanpham p{
+    margin: 5px 0px;
+}
+.sanpham img{
+    width: 150px;
+}
+.sanpham button{
+    background-color: black;
+    color: white;
+    line-height: 20px;
+    border-radius: 7px;
+}

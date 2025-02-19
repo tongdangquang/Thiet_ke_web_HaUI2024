@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Nhập tuổi của bạn: </label>
+        <input type="text" name="" id="age">
+        <input type="button" value="=" onclick="check_age()">
+    </form>
+    <div id="print"></div>
+    <script>
+        function check_age()
+        {
+            var tuoi = parseInt(document.getElementById("age").value);
+            if(isNaN(tuoi))
+            {
+                alert("Nhập một số nguyên.");
+                return;
+            }
+            if(tuoi >= 20)
+                document.getElementById("print").innerHTML = "Bạn là người lớn.";
+            else
+                document.getElementById("print").innerHTML = "Bạn là trẻ em.";        
+        }
+    </script>
+</body>
+</html>

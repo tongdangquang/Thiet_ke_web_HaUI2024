@@ -1,0 +1,54 @@
+/* 1: CSS pseudo class */
+:hover /*Khi một phần tử đang được di chuột.*/
+:active /*Khi một phần tử đang ở trạng thái kích hoạt (ví dụ: khi người dùng nhấn nút chuột).*/
+:focus /*Khi một phần tử đang được trỏ đến (ví dụ: khi người dùng sử dụng bàn phím để điều hướng qua các phần tử).*/
+:first-child /*Chọn phần tử là con đầu tiên của một phần tử cha.*/
+:last-child /*Chọn phần tử là con cuối cùng của một phần tử cha.*/
+:nth-child(n) /*Chọn phần tử là con thứ n của một phần tử cha.*/
+:nth-last-child(n) /*Chọn phần tử là con thứ n từ cuối cùng của một phần tử cha.*/
+:nth-of-type(n) /*Chọn phần tử là con thứ n của một loại phần tử cụ thể.*/
+:nth-last-of-type(n) /*Chọn phần tử là con thứ n từ cuối cùng của một loại phần tử cụ thể.*/
+:not(selector) /*Loại bỏ các phần tử khỏi lựa chọn nếu chúng khớp với selector.*/
+:first-of-type /*Chọn phần tử là con đầu tiên của một loại phần tử cụ thể.*/
+:last-of-type /*Chọn phần tử là con cuối cùng của một loại phần tử cụ thể.*/
+:empty /*Chọn phần tử không có nội dung.*/
+:checked /*Chọn phần tử input radio hoặc checkbox đã được chọn.*/
+:disabled /*Chọn phần tử input bị vô hiệu hóa.*/
+:enabled /*Chọn phần tử input đã được kích hoạt.*/
+:nth-child(odd) /*Chọn phần tử là con số lẻ của một phần tử cha.*/
+:nth-child(even) /*Chọn phần tử là con số chẵn của một phần tử cha.*/
+
+
+/* 2: CSS pseudo class */
+::before /* Tạo một phần tử giả trước nội dung thực sự của phần tử chính.*/
+::after /* Tạo một phần tử giả sau nội dung thực sự của phần tử chính.*/
+::first-line /* Chọn đoạn văn bản đầu tiên của phần tử.*/
+::first-letter /* Chọn chữ cái đầu tiên của phần tử văn bản.*/
+::selection /* Chọn vùng được chọn bởi người dùng.*/
+
+/* Sử dụng pseudo-element ::before */
+p::before {
+  content: "Đây là đoạn văn trước mỗi đoạn p.";
+}
+
+/* Sử dụng pseudo-element ::after */
+p::after {
+  content: "Đây là đoạn văn sau mỗi đoạn p.";
+}
+
+/* Sử dụng pseudo-element ::first-line */
+p::first-line {
+  font-weight: bold;
+}
+
+/* Sử dụng pseudo-element ::first-letter */
+p::first-letter {
+  font-size: 150%;
+  color: red;
+}
+
+/* Sử dụng pseudo-element ::selection */
+p::selection {
+  background-color: yellow;
+  color: black;
+}

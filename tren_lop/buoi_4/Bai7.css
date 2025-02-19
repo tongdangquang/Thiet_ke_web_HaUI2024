@@ -1,0 +1,143 @@
+header{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px double black;
+    padding: 0px 30px;
+}
+header > img{
+    height: 60px;
+    margin: 10px 0px;
+}
+header > div{
+    background-color: #ff3399;
+    color: white;
+}
+
+header > div > p{
+    margin: 10px;
+}
+
+header > div:hover{
+    background-color: yellow;
+    color: red;
+}
+
+
+.menu1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 0px;
+    list-style: none;
+}
+.menu1 > li{
+    text-align: center;
+    padding: 15px 20px;
+    position: relative;
+}
+.menu1 > li > a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.menu1 > li:hover{
+    background-color: #ff3399;
+}
+
+.menu2{
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: white;
+    padding: 0px;
+    white-space: nowrap;
+    display: none;
+}
+.menu2 > li{
+    padding: 7px 0px;
+}
+.menu2 > li > a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.menu2 > li:first-child{
+    text-decoration: underline;
+    list-style: none;
+}
+.menu1 > li:hover > .menu2{
+    display: block;
+}
+
+.content_top{
+    display: flex;
+    justify-content: space-between;
+}
+.content_top_left
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content_top_left > img{
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+}
+.content_top_left select:first-child{
+    width: 150px;
+}
+.content_top_right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content_top_right a{
+    padding: 7px 10px;
+    margin: 0px 5px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+}
+.content_top_right a:focus{
+    color: white;
+    background-color: black;
+}
+
+
+.content_botton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 10px;
+}
+.ct1 > img{
+    height: 400px;
+    width: 350px;
+}
+.ct2{
+    background-color: #003366;
+    color: white;
+    margin: 0px;
+    padding: 3px 0px;
+}
+
+.ct2 > p{
+    margin: 10px 0px;
+    text-align: center;
+    font-weight: bold;
+}
+.sp1:hover{
+    color: #ffff66;
+}
+
+.ct2 > p > span:last-child{
+    text-decoration: line-through;
+}
+.sp2{
+    color: red;
+}
+

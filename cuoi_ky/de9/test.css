@@ -1,0 +1,130 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+    background-color: #336699;
+}
+header input{
+    padding: 10px 300px 10px 0px;
+    margin: 0px;
+}
+header select{
+    padding: 10.5px 10px;
+    margin: 0px;
+}
+header div{
+    background-color: black;
+    color: white;
+    padding: 0px 40px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+header img{
+    margin: 10px 50px;
+}
+
+.left{
+    width: 20%;
+    border: 1px solid #336699;
+    margin: 10px 0px;
+}
+.left > h1{
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #336699;
+    padding: 10px;
+
+}
+.menu1 {
+    margin: 0px;
+    padding: 0px;
+}
+.menu1 > li{
+    padding: 10px;
+    position: relative;
+    border-bottom: 1px solid #336699;
+}
+.menu1 > li:last-child{
+    border-bottom: none;
+}
+.menu1 > li:hover{
+    color: #336699;
+}
+
+.menu2{
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    white-space: nowrap;
+    list-style: none;
+    background-color: white;
+    margin-left: 2px;
+    padding: 0px;
+    border: 1px solid #336699;
+    width: 100%;
+    display: none;
+}
+.menu2 > li{
+    margin: 0px;
+    padding: 10px;
+    border-bottom: 1px solid #336699;
+}
+.menu2 > li:last-child{
+    border-bottom: none;
+}
+.menu2 > li > a{
+    color: black;
+    text-decoration: none;
+}
+.menu2 > li:hover > a{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.menu1 > li:hover > .menu2{
+    display: block;
+}
+
+.four_device{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px; 
+    margin: 0px;
+}
+.one_device > img{
+    width: 200px;
+    height: 200px;
+    margin: 0px;
+    padding: 0px;
+}
+.one_device{
+    text-align: left;
+    width: 170px;
+}
+.chua_giam{
+    color: black;
+}
+.da_giam{
+    color: red;
+}
+.da_giam > span{
+    background-color: red;
+    color: white;
+    margin-left: 10px;
+}
+.name:hover{
+    color: red;
+}
+
+.right{
+    width: 80%;
+    margin: 10px;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+}

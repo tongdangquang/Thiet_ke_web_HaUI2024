@@ -1,0 +1,154 @@
+header{
+    border: 1px solid black;
+}
+.hd1{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.logo1 > h4{
+    margin: 0px;
+}
+.logo2{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.logo2 > img{
+    width: 50%;
+    height: 120px;
+    margin: 0px 10px;
+}
+
+.menu1{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    list-style: none;
+    background-color: black;
+    padding: 0px;
+    margin: 20px 0px 0px 0px;
+}
+.menu1 > li{
+    padding: 10px 20px;
+    border-right: 1px solid white;
+}
+.menu1 > li > a{
+    text-decoration: none;
+    color: white;
+}
+.menu1 > li:hover > a{
+    color: yellow;
+}
+.sidebar{
+    width: 30%;
+    border: 1px solid black;
+    padding: 0px;
+    margin-top: 20px;
+}
+
+.sidebar > h3{
+
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0px;
+    margin: 0px;
+}
+.menu2{
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+    list-style: inside;
+}
+.menu2 > li{
+    padding: 10px 0px 10px 10px;
+    position: relative;
+}
+.menu2 > li a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    /* white-space: nowrap; */
+}
+.menu3{
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    width: 70%;
+    padding: 0px 25px;
+    list-style: disc;
+    border: 1px solid black;
+    display: none;
+}
+.menu3 > li{
+    padding: 10px 0px 10px 10px;
+}
+.menu2 > li:hover > .menu3{
+    display: block;
+}
+
+section{
+    display: flex;
+}
+
+.content{
+    width: 100%;
+    margin-left: 10px;
+}
+.ct1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+    border-bottom: 3px solid black;
+}
+.ct1 > h3{
+    margin: 20px 0px 0px 0px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+}
+.ct1 > a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 0px;
+    margin: 20px 20px 0px 0px;
+}
+
+.ct2_1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+
+.sanpham{
+    text-align: center;
+}
+.sanpham img{
+    width: 190px;
+}
+.sanpham p, a{
+    margin: 0px;
+    color: rgb(89, 183, 238);
+}
+.sanpham span{
+    color: red;
+}
+.sanpham p:hover{
+    color: #ffff66;
+}
+.sanpham img:hover{
+    transform: scale(1.2);
+}
+.sanpham button{
+    background-color: #003366;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 7px;
+}

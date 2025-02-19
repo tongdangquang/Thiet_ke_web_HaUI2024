@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <table border="1px" cellsapcing="0" align="center" width="400px">
+            <tr>
+                <td colspan="2" align="center">Chuẩn hóa xâu</td>
+            </tr>
+            <tr>
+                <td>Nhập xâu 1</td>
+                <td><input type="text" name="" id="source_str1" size="40"></td>
+            </tr>
+            <tr>
+                <td>Nhập xâu 2</td>
+                <td><input type="text" name="" id="source_str2" size="40"></td>
+            </tr>
+            <tr>
+                <td>Kết quả</td>
+                <td><input type="text" name="" id="result" size="40" readonly></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="reset" value="Xóa" id="" onclick="reset_form()">
+                    <input type="button" value="Kiểm tra" id="" onclick="ket_qua()">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function reset_form()
+        {
+            document.getElementsByTagName("form")[0].reset();
+        }
+        function chuan_hoa()
+        {
+            var str1 = document.getElementById("source_str1").value;
+            var str2 = document.getElementById("source_str2").value;
+            if(str1.length != str2.length)
+                return false;
+
+            var m1 = str1.split("");
+            var m2 = str2.split("");
+            var m3 = m1.sort();
+            var m4 = m2.sort();
+            for(var i = 0; i < m3.length; i++)
+            {
+                if(m3[i] != m4[i])
+                    return false;
+            }
+            return true;
+        }
+
+        function ket_qua()
+        {
+            if(chuan_hoa())
+                document.getElementById("result").value = "true";
+            else
+                document.getElementById("result").value = "false";
+        }
+    </script>
+</body>
+</html>

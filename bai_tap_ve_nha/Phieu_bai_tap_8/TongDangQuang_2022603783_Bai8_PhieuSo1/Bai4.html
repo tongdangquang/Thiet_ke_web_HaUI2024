@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <table border="1px" cellspacing="0px" align="center" width="500px" height="100px">
+            <tr>
+                <td>Nhập chuỗi </td>
+                <td><input type="text" name="" id="array_source" style="width: 300px;" placeholder="Cách thức nhập: 1, 2, 3, ..."></td>
+            </tr>
+            <tr>
+                <td>Chuỗi đảo ngược: </td>
+                <td><input type="text" name="" id="result" style="width: 300px;" readonly></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="reset" value="Xóa" id="delete" onclick="reset_form()">
+                    <input type="button" value="Đảo ngược" id="sort" onclick="sort_array()">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function sort_array()
+        {
+            var str = document.getElementById("array_source").value;
+            var m = str.split("");
+            var m1 = m.reverse();
+            var str1 = m1.join("");
+            document.getElementById("result").value = str1;
+        }
+        function reset_form()
+        {
+            document.getElementsByTagName("form")[0].reset();
+        }
+    </script>
+</body>
+</html>

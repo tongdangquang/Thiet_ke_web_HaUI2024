@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+    background-color: #336699;
+    }
+    header input{
+        padding: 10px 300px 10px 0px;
+        margin: 0px;
+    }
+    header select{
+        padding: 10.5px 10px;
+        margin: 0px;
+    }
+    header div{
+        background-color: black;
+        color: white;
+        padding: 0px 40px 0px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    header img{
+        margin: 10px 50px;
+    }
+
+    .left{
+        width: 20%;
+        border: 1px solid #336699;
+        margin: 10px 0px;
+    }
+    .left > h1{
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        background-color: #336699;
+        padding: 10px;
+
+    }
+    .menu1 {
+        margin: 0px;
+        padding: 0px;
+    }
+    .menu1 > li{
+        padding: 10px;
+        position: relative;
+        border-bottom: 1px solid #336699;
+    }
+    .menu1 > li:last-child{
+        border-bottom: none;
+    }
+    .menu1 > li:hover{
+        color: #336699;
+    }
+
+    .menu2{
+        position: absolute;
+        top: 0%;
+        left: 100%;
+        white-space: nowrap;
+        list-style: none;
+        background-color: white;
+        margin-left: 2px;
+        padding: 0px;
+        border: 1px solid #336699;
+        width: 100%;
+        display: none;
+    }
+    .menu2 > li{
+        margin: 0px;
+        padding: 10px;
+        border-bottom: 1px solid #336699;
+    }
+    .menu2 > li:last-child{
+        border-bottom: none;
+    }
+    .menu2 > li > a{
+        color: black;
+        text-decoration: none;
+    }
+    .menu2 > li:hover > a{
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    .menu1 > li:hover > .menu2{
+        display: block;
+    }
+
+    .four_device{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px; 
+        margin: 0px;
+    }
+    .one_device > img{
+        width: 200px;
+        height: 200px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .one_device{
+        text-align: left;
+        width: 170px;
+    }
+    .chua_giam{
+        color: black;
+    }
+    .da_giam{
+        color: red;
+    }
+    .da_giam > span{
+        background-color: red;
+        color: white;
+        margin-left: 10px;
+    }
+    .name:hover{
+        color: red;
+    }
+
+    .right{
+        width: 80%;
+        margin: 10px;
+    }
+    section{
+        display: flex;
+        justify-content: space-between;
+}
+</style>
+<body>
+    <header>
+        <img src="logo.PNG" alt="">
+        <div>
+            <select name="" id="">
+                <option value="">All Categories</option>
+                <option value="">All Categories</option>
+                <option value="">All Categories</option>
+            </select>
+            <input type="text" name="" id="" placeholder="Search for product"> Search
+        </div>
+        <img src="anh.png" alt="" style="height: 40px; width: 40px;">
+        <img src="anh.png" alt="" style="height: 40px; width: 40px;">
+    </header>
+
+    <section>
+
+        <div class="left">
+            <h1>ALL CATEGORY</h1>
+            <ul class="menu1">
+                <li>Home</li>
+                <li>Blog</li>
+                <li>
+                    Laptops
+                    <ul class="menu2">
+                        <li><a href="#">Dell (0)</a></li>
+                        <li><a href="#">Men (0)</a></li>
+                        <li><a href="#">Purse (0)</a></li>
+                    </ul>
+                </li>
+                <li>Shooks</li>
+                <li>Cloth</li>
+                <li>Cosmetic</li>
+                <li>Desktops</li>
+                <li>Kids</li>
+                <li>MP3 Players</li>
+                <li>Perfume</li>
+                <li>MORE</li>
+            </ul>
+        </div>
+    
+        <div class="right">
+            <div class="four_device">
+                <div class="one_device">
+                    <img src="anh.png" alt="">
+                    <p class="name">Vòng đeo tay Galaxy Ultra hàng chính hãng</p>
+                    <p class="da_giam">590.000 đ <span>-43%</span></p>
+                    <p class="chua_giam ">900.000 đ</p>
+                </div>
+                <div class="one_device">
+                    <img src="anh.png" alt="">
+                    <p class="name">Vòng đeo tay Galaxy Ultra hàng chính hãng</p>
+                    <p class="da_giam">590.000 đ <span>-43%</span></p>
+                    <p class="chua_giam ">900.000 đ</p>
+                </div>
+                <div class="one_device">
+                    <img src="anh.png" alt="">
+                    <p class="name">Vòng đeo tay Galaxy Ultra hàng chính hãng</p>
+                    <p class="da_giam">590.000 đ <span>-43%</span></p>
+                    <p class="chua_giam ">900.000 đ</p>
+                </div>
+                <div class="one_device">
+                    <img src="anh.png" alt="">
+                    <p class="name">Vòng đeo tay Galaxy Ultra hàng chính hãng</p>
+                    <p class="da_giam">590.000 đ <span>-43%</span></p>
+                    <p class="chua_giam ">900.000 đ</p>
+                </div>
+            </div>
+            <div class="four_device">
+                <div class="one_device">
+                    <img src="anh.png" alt="">
+                    <p class="name">Vòng đeo tay Galaxy Ultra hàng chính hãng</p>
+                    <p class="da_giam">590.000 đ <span>-43%</span></p>
+                    <p class="chua_giam ">900.000 đ</p>
+                </div>
+                <div class="one_device">
+                    <img src="anh.png" alt="">
+                    <p class="name">Vòng đeo tay Galaxy Ultra hàng chính hãng</p>
+                    <p class="da_giam">590.000 đ <span>-43%</span></p>
+                    <p class="chua_giam ">900.000 đ</p>
+                </div>
+                <div class="one_device">
+                    <img src="anh.png" alt="">
+                    <p class="name">Vòng đeo tay Galaxy Ultra hàng chính hãng</p>
+                    <p class="da_giam">590.000 đ <span>-43%</span></p>
+                    <p class="chua_giam ">900.000 đ</p>
+                </div>
+                <div class="one_device">
+                    <img src="anh.png" alt="">
+                    <p class="name">Vòng đeo tay Galaxy Ultra hàng chính hãng</p>
+                    <p class="da_giam">590.000 đ <span>-43%</span></p>
+                    <p class="chua_giam ">900.000 đ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,39 @@
+h1
+{
+    /* background-color: xác định màu nền, có thể bằng tên màu hoặc hexa(#ffffff) */
+    background-color: blue;
+    background-color: #0066ff;
+}
+
+h2
+{
+    /* background-image: xác định ảnh nền, giá trị thuộc tính là url */
+    background-image: url("/lythuyet_html_css/ly_thuyet_html/bground.jpg");
+
+    /* background-repeat: xác định ảnh nền có được lặp lại hay không */
+}
+
+/* .box */
+/* { */
+    /* height: 100vh; hiển thị kích thước ảnh */
+    /* background-image: url(/lythuyet_html_css/ly_thuyet_html/dark.webp); */
+    /* background-repeat: repeat; lặp ảnh nền theo cả 2 chiều */
+    /* background-repeat: no-repeat; không lặp ảnh */
+    /* background-repeat: repeat-x; lặp ảnh nền theo chiều ngang */
+    /* background-repeat: repeat-y; lặp ảnh nền theo chiều dọc */
+
+    /* background-attachment: xác định ảnh có trôi hay cố định khi ta cuộn nội dung trang web hay không. */
+    /* background-attachment: fixed; cố định ảnh nền so với nội dung trang web, khi cuộn trang web thì không bị trôi ảnh */
+    /* background-attachment: scroll; ảnh nền sẽ cuộn cùng nội dung trang web, đây là giá trị mặc định */
+/* } */
+
+body
+{
+    background-image: url(/lythuyet_html_css/ly_thuyet_html/bground.jpg);
+    /* background-size: thiết lập lại kích thước cho ảnh nền, giá trị các thuộc tính là width height */
+    background-size: 1000px, 500px;
+
+    /* background-position: xác định vị trí bắt đầu của ảnh nền */
+    background-position: right top; /* left top, right top, left bottom, 0 0,... */
+    background-color: #1E1E3F;
+}

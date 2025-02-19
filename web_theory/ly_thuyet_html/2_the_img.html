@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- thẻ <img src="" alt=""> dùng để chèn hình ảnh vào trang web, đi kèm với attribute src xác định đường dẫn đến ảnh  -->
+    <!-- 
+    <img src="images_link.png" alt="This is a image..." usemap="Background image">
+    <map name="Background image">
+        <area shape="rect" coords="0, 0, 100, 100" href="page1.html" alt="Area 1">
+        <area shape="circle" coords="150, 150, 50" href="page2.html" alt="Area 2">
+        <area shape="poly" coords="300, 300, 400, 250, 500, 350" href="page3.html" alt="Area 3">
+    </map> 
+    -->
+
+    <!-- 
+    - <img> là hình ảnh mà chúng ta muốn tạo các vùng tương tác trên.
+    - usemap="nameMap" trong thẻ <img> xác định rằng chúng ta cần tạo một map có tên nameMap
+    - <map name=""> bắt đầu khu vực định nghĩa cho map
+    - các thẻ <area> xác định các vùng tương tác với ảnh:
+        + một vùng hình chữ nhật được định nghĩa với shape="rect" coords="0,0,100,100"
+        + một vùng hình tròn được định nghĩa với shape="circle" coords="150,150,50"
+        + một vùng hình đa giác được định nghĩa với shape="poly" coords="300,300,400,250,500,350"
+    - khi người dùng nhấp vào các vùng này, họ sẽ được chuyển đến các trang được xác định trong thuộc tính href 
+    -->
+    <figure align="center"> <!--sử dụng thẻ figure để đóng gói 1 ảnh-->
+        <img src="bground.jpg" width="60%" alt="This is a Background" usemap="#background" title="hello"> <!--lưu ý phải có # trong usemap-->
+        <figcaption>background about the girl</figcaption> <!--sử dụng thẻ figcaption để đặt tiêu đề ảnh-->
+        <map name="background">
+            <area shape="rect" coords="25, 16, 500, 300" href="https://www.google.com/" alt="Error">
+        </map>
+    </figure>
+</body>
+</html>

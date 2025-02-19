@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+</head>
+<style>
+    table{
+        background-color: #c9e4bc; /* đặt màu nền cho bảng */
+    }
+    label, caption{ /* đặt màu chữ */
+        color: green;
+    }
+    td:nth-child(1){ /* điều chỉnh độ rộng của cột 1 so với bảng */
+        width: 40%;
+    }
+    td:nth-child(2){ /* điều chỉnh độ rộng của cột 2 so với bảng */
+        width: 60%;
+    }
+</style>
+<body>
+    <form action="hello_world" method="get" autocomplete="">
+        <table align="center" border="1px" cellspacing="0" width="700" height="450" style="box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.5);"> <!--thêm bóng đổ box-shadow-->
+            <caption align="center" style="font-size: 35px;">Phiếu đăng ký tham gia chương trình khuyến mãi</caption>
+            <tr>
+                <td>
+                    <label for="name">Họ và tên</label>
+                </td>
+                <td>
+                    <input type="text" name="name" id="name" placeholder="Nhập họ và tên" style="width: 85%;"> <!--căn chỉnh độ rộng ô nhập thông tin bằng width-->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="address">Địa chỉ</label>
+                </td>
+                <td>
+                    <input type="text" name="address" id="address" placeholder="Nhập địa chỉ" style="width: 75%;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phone_number">Điện thoại</label>
+                </td>
+                <td>
+                    <input type="text" name="phone_number" id="phone_number" placeholder="Nhập số điện thoại" style="width: 65%;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sex">Phái</label>
+                </td>
+                <td>
+                    <input type="radio" name="sex" id="nam" value="nam">
+                    <label for="nam">Nam</label>
+                    <input type="radio" name="sex" id="nu" value="nu">
+                    <label for="nu">Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="job">Nghề nghiệp</label>
+                </td>
+                <td>
+                    <select name="job" id="job">
+                        <option value="teacher">Giáo viên</option>
+                        <option value="doctor">Bác sĩ</option>
+                        <option value="police">Cảnh sát</option>
+                        <option value="farmer">Nông dân</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="products">Chọn sản phẩm tham gia</label>
+                </td>
+                <td>
+                    <select name="products" id="" size="4" multiple="">
+                        <option value="kem_dang_rang">Kem đánh răng</option>
+                        <option value="bot_giat">Bột giặt</option>
+                        <option value="dau_goi_dau">Dầu gội đầu</option>
+                        <option value="sua_tam">Sữa tắm</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="people_number">Số người dự đoán tham gia</label>
+                </td>
+                <td>
+                    <input type="text" name="people_number" id="people_number" style="width: 30%;">
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <input type="submit" value="Đồng ý" id="" style="background-color: #c6c3c3;"> <!--đổ màu nền cho nút đăng ký-->
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

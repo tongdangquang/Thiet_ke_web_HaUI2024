@@ -1,0 +1,19 @@
+p{
+    /* font-family: dùng để xác định font chữ cho văn bản */
+    font-family: 'Times New Roman', Times, serif;
+
+    /* font-size: dùng để xác định kích thước chữ cho văn bản */
+    font-size: 16px;
+
+    /* font-style: dùng để xác định kiểu chữ cho văn bản */
+    font-style: italic; 
+    font-style: normal;
+    
+    /* font-weight: dùng để xác định in đậm cho văn bản */
+    font-weight: bold;
+    font-weight: normal;
+
+    /* font-variant: dùng để xác định cho văn bản có in chữ hoa nhỏ hay không */
+    font-variant: small-caps;
+    font-variant: normal;
+}

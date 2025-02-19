@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Truyện ngắn</title>
+  </head>
+  <style>
+    header {
+      display: flex;
+      height: 130px;
+      width: 100%;
+    }
+    header .img1 {
+      width: 20%;
+      padding-top: 0px;
+      border-right: 5px solid white;
+    }
+    header .img2 {
+      padding-right: 0px;
+      width: 80%;
+    }
+    section {
+      margin-top: 30px;
+    }
+    nav > .menu1 {
+      display: flex;
+      padding: 0px;
+      margin: 0px 100px;
+      align-items: center;
+      justify-content: space-between;
+      background-color: green;
+      list-style: none;
+    }
+    nav > .menu1 > li {
+      width: 11.1%;
+      padding: 15px;
+      text-align: center;
+      border-right: 1px dotted blue;
+      position: relative;
+    }
+    nav > .menu1 > li:last-child {
+      border-right: none;
+    }
+    nav > .menu1 > li > a {
+      text-decoration: none;
+      color: red;
+      font-size: 16px;
+    }
+
+    nav > .menu1 > li:hover {
+      background-color: grey;
+    }
+    nav .menu2 {
+      position: absolute;
+      top: 100%;
+      left: 0%;
+      list-style: none;
+      white-space: nowrap;
+      background-color: green;
+      padding: 0px;
+      margin-top: 3px;
+      display: none;
+    }
+
+    nav .menu2 > li {
+      padding: 15px;
+      text-align: left;
+      border-top: 1px dotted #000;
+    }
+    nav .menu2 > li:first-child {
+      border-top: none;
+    }
+    nav .menu2 > li > a {
+      text-decoration: none;
+      color: red;
+      font-size: 16px;
+    }
+    nav > .menu1 > li:hover > .menu2 {
+      display: block;
+    }
+    nav > .menu1 > li:hover > .menu2 > li:hover {
+      background-color: grey;
+    }
+
+    .content {
+      display: flex;
+      margin-top: 30px;
+    }
+    .list_left {
+      padding: 0px 10px;
+    }
+    .list_left > ul {
+      list-style: disc;
+    }
+    .img3 {
+      width: 15%;
+      height: 250px;
+      margin: 0px 10px;
+    }
+
+    .content > p {
+      text-align: justify;
+      width: 50%;
+      margin-top: 0px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 20px;
+      color: white;
+      background-color: black;
+    }
+    footer > p {
+      padding: 5px 0px;
+    }
+  </style>
+  <body>
+    <header>
+      <img class="img1" src="logo.png" alt="VDC" />
+      <img
+        class="img2"
+        src="truyen_ngan.png"
+        alt="Truyện ngắn hay trong tuần"
+      />
+    </header>
+
+    <section>
+      <nav>
+        <ul class="menu1">
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Truyện blog</a></li>
+          <li>
+            <a href="#">Truyện ngắn</a>
+            <ul class="menu2">
+              <li><a href="#">Truyện ngắn về tính yêu</a></li>
+              <li><a href="#">Truyện ngắn về gia đình</a></li>
+              <li><a href="#">Truyện ngắn về bạn bè</a></li>
+              <li><a href="#">Truyện ngắn về đời sống</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Sách hay</a></li>
+          <li><a href="#">Tâm sự</a></li>
+          <li><a href="#">Tiểu thuyết</a></li>
+          <li><a href="#">Tin tức</a></li>
+          <li><a href="#">Truyện cuốn</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </nav>
+      <div class="content">
+        <div class="list_left">
+          <h2>Tủ sách</h2>
+          <ul>
+            <li>Truyện nổi bật</li>
+            <li>Truyện mới</li>
+            <li>Tiểu thuyết mới</li>
+            <li>Truyện kiếm hiệp mới</li>
+            <li>Truyện khoa học viễn tưởng</li>
+            <li>Truyện trinh thám</li>
+            <li>Góc cười</li>
+            <li>Góc tâm sự</li>
+          </ul>
+        </div>
+        <img
+          class="img3"
+          src="nguyen_nhat_anh.png"
+          alt="Tôi thấy hoa vàng trên cỏ xanh"
+        />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. A iusto
+          porro officia modi inventore dolores ducimus, suscipit ipsum
+          repellendus repudiandae delectus, pariatur sapiente aperiam explicabo
+          unde laborum reprehenderit mollitia aliquid. Lorem ipsum dolor, sit
+          amet consectetur adipisicing elit. A iusto porro officia modi
+          inventore dolores ducimus, suscipit ipsum repellendus repudiandae
+          delectus, pariatur sapiente aperiam explicabo unde laborum
+          reprehenderit mollitia aliquid. Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. A iusto porro officia modi inventore
+          dolores ducimus, suscipit ipsum repellendus repudiandae delectus,
+          pariatur sapiente aperiam explicabo unde laborum reprehenderit
+          mollitia aliquid. Lorem ipsum dolor, sit amet consectetur adipisicing
+          elit. A iusto porro officia modi inventore dolores ducimus, suscipit
+          ipsum repellendus repudiandae delectus, pariatur sapiente aperiam
+          explicabo unde laborum reprehenderit mollitia aliquid. Lorem ipsum
+          dolor, sit amet consectetur adipisicing elit. A iusto porro officia
+          modi inventore dolores ducimus, suscipit ipsum repellendus repudiandae
+          delectus, pariatur sapiente aperiam explicabo unde laborum
+          reprehenderit mollitia aliquid. Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. A iusto porro officia modi inventore
+          dolores ducimus, suscipit ipsum repellendus repudiandae delectus,
+          pariatur sapiente aperiam explicabo unde laborum reprehenderit
+          mollitia aliquid.
+        </p>
+      </div>
+    </section>
+    <footer>
+      <p>Bản quyền CNTT_HAUI.com</p>
+    </footer>
+  </body>
+</html>

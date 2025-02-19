@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <table style="font-weight: bold; margin: 0px auto;">
+            <tr>
+                <td>Họ và Tên: </td>
+                <td><input type="text" name="" id="str"></td>
+            </tr>
+            <tr>
+                <td>Họ</td>
+                <td><input type="text" name="" id="result" readonly></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="Hiển thị" onclick="check()">
+                    <input type="reset" value="Hủy bỏ" onclick="reset_form()">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function check()
+        {
+            var m = document.getElementById("str").value.split(" ");
+            document.getElementById("result").value = m[0];
+        }
+        function reset_form()
+        {
+            document.getElementsByTagName("form")[0].reset();
+        }
+    </script>
+</body>
+</html>

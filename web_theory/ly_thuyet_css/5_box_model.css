@@ -1,0 +1,200 @@
+/* 1: CSS box-model */
+/* border làm mẫu, padding và margin tương tự */
+div {
+  border: 1px solid black;
+  padding: 30px;
+  margin: 10px;
+}
+/* border: độ rộng viền - kiểu viền - màu viền */
+div {
+  border: 1px solid black;
+  border-style: solid; /* thiết lập kiểu viền */
+  border-width: 1px; /* thiết lập độ rộng viền */
+  border-color: black; /* thiết lập màu viền */
+
+  /* thiết lập cho từng đường viền */
+  border-top-style: 1px dotted black;
+  border-right-style: 2px solid pink;
+  border-bottom-style: 1px double black;
+  border-left-style: 3px dashed yellow;
+
+  border-style: dotted solid double dashed;
+  /* top: dotted
+    right: solid
+    bottom: double
+    left: dashed */
+
+  border-style: dotted solid double;
+  /* top: dotted
+    right and left: solid
+    bottom: double */
+
+  border-style: dotted solid;
+  /* top and bottom: dotted
+    right and left: solid */
+
+  border-style: dotted;
+  /* top, right, bottom, left: dotted */
+
+  /* bo tròn góc phần tử bằng thuộc tính border-radius */
+  border-radius: 5px 6px 7px 8px;
+}
+
+/* 2: CSS dimension */
+div {
+    width: 100%; /* chiều ngang */
+    height: 100%; /* chiều dọc */
+    min-width: 100%; /* chiều ngang tối đa */
+    max-height: 100%; /* chiều dọc tối đa */
+    min-width: 10%; /* chiều ngang tối thiểu */
+    min-height: 10%; /* chiều dọc tối thiểu */
+}
+
+/* 3: CSS box-sizing */
+div{
+    /* box-sizing trong CSS được sử dụng để xác định cách tính toán kích thước của một phần tử, đặc biệt là cách xác định kích thước của các thuộc tính width và height. */
+    box-sizing: content-box; /* Kích thước của phần tử chỉ tính toán từ nội dung bên trong (bao gồm width và height), không bao gồm padding, border, và margin. */
+    width: 100px; /* Width chỉ tính toán từ nội dung, không bao gồm padding và border. */
+    padding: 10px;
+    border: 2px solid #000;
+}
+
+/* 4: CSS opacity */
+p{
+    /* thuộc tính opacity dùng để điều chỉnh mức độ trong suốt của 1 phần tử, giá trị là từ 0 -> 1 */
+    background-color: black;
+    opacity: 0.7;
+}
+
+/* 5: CSS box-shadow */
+div{
+    /* box-shadow:lệch ngang, lệch dọc, độ mờ, độ rộng, màu, vị trí hiển thị bóng (trong hoặc ngoài) */
+    box-shadow: 5px 15px 5px 5px #dddddd inset;
+}
+
+/* 6: CSS display */
+div{
+    display: block; /* Chiếm toàn bộ chiều ngang của phần tử cha (nếu có) và bắt đầu từ một dòng mới. */
+    display: inline; /* Phần tử được hiển thị như một dòng trong văn bản (inline-level element). Chiếm chỉ chiều ngang và chiều cao cần thiết để chứa nội dung của nó. */
+    display: inline-block; /* Phần tử được hiển thị như một dòng trong văn bản, nhưng có thể được kiểm soát kích thước bằng thuộc tính chiều rộng và chiều cao. */
+    display: none; /* Phần tử không được hiển thị. */
+    display: flex; /* Phần tử trở thành một container linh hoạt (flex container) và nó sẽ chứa các phần tử con bên trong theo mô hình linh hoạt. */
+    display: grid; /* Phần tử trở thành một container lưới (grid container) và sẽ chứa các phần tử con trong một lưới hai chiều. */
+    display: table; /* Phần tử sẽ được hiển thị như một bảng (table). */
+}
+
+/* 7: CSS position */
+div{
+    top: 50px; /* cách lề trên 50px */
+    right: 50px; /* cách lề phải 50px */
+    bottom: 50px; /* cách lề dưới 50px */
+    left: 50px; /* cách lề trái 50px */
+
+    position: static; /* đặt phần tử ở đâu thì nó nàm ở đấy */
+    position: fixed; /* phần tử sẽ cố định so với cửa sổ trình duyệt */
+    position: sticky; /* phần tử sẽ được nằm ở đầu trang khi cuộn thanh trỏ chuột, thường dùng để định dạng menu <nav> trong html */
+    position: relative; /* Xác định vị trí hiển thị của chúng có quan hệ với vị trí bình thường. Thông qua thiết lập các thuộc tính kèm theo: left, right, top, bottom */
+    position: absolute; /* phần tử hiện tại sẽ được căn theo phần tử cha gần nhất */
+}
+
+/* 8. CSS layer z-index */
+/* thường thì khối nào đặt trước trong html thì sẽ hiển thị dưới khối hiển thị sau, 
+nhưng z-index sẽ điều chỉnh bằng cách: khối nào có z-index nhỏ hơn sẽ hiển thị dưới khối có z-index lớn hơn */
+#div1{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    top: 100px;
+    left: 100px;
+    z-index: 10;
+}
+/* #div1 hiển thị dưới #div2 */
+#div2{
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    top: 250px;
+    left: 150px;
+    z-index: 20;
+}
+
+/* 9: CSS link */
+a:link {
+  /* liên kết bình thường, chưa được kích */
+  color: red; /*  */
+  text-decoration: underline;
+}
+a:visited {
+  /* liên kết đã được kích */
+  color: green;
+}
+a:hover {
+  /* liên kết khi người dùng di chuột vào */
+  color: pink;
+  text-decoration: underline;
+}
+a:active {
+  /* liên kết tại thời điểm kích chuột */
+  color: yellow;
+}
+
+/* 10: CSS list */
+ul{
+    /* thiết lập bullet hay numbering cho danh sách */
+    list-style-type: circle; /* hình tròn */
+    list-style-type: upper-alpha; /* chữ cái viết hoa */
+    list-style-type: square; /* hình vuông */
+    list-style-type: lower-alpha; /* chữ cái viết thường */
+
+    /* thiết lập ảnh cho bullet */
+    list-style-image: url(image.png);
+
+    /* thiết lập vị trí hiển thi của bullet */
+    list-style-position: inside; /* Mặc định. Dấu đầu dòng (marker) sẽ nằm bên trong phần nội dung của danh sách, và nằm ở gần mép trái của danh sách. */
+    list-style-position: outside; /* Dấu đầu dòng (marker) sẽ nằm bên ngoài phần nội dung của danh sách và ở gần mép trái của danh sách. */
+    /* viết gộp */
+    list-style: square inside url(image.png);
+}
+
+/* 11: CSS table */
+table, th, td{
+    /* sử dụng thuộc tính border để xác định đường viền của bảng và các ô dữ liệu */
+    border: 1px solid black;
+    /* để gộp (collapse) đường viền của bảng ta sử dụng thuộc tính border-collapse */
+    border-collapse: collapse;
+    /* thiết lập chiều rộng, dài của bảng */
+    width: 100%;
+    height: 50%;
+    /* căn lề dữ liệu */
+    text-align: left;
+    vertical-align: middle;
+}
+
+/* 12: CSS display position */
+div{
+    top: 50px; /* cách lề trên 50px */
+    right: 50px; /* cách lề phải 50px */
+    bottom: 50px; /* cách lề dưới 50px */
+    left: 50px; /* cách lề trái 50px */
+
+    position: static; /* đặt phần tử ở đâu thì nó nàm ở đấy */
+    position: fixed; /* phần tử sẽ cố định so với cửa sổ trình duyệt */
+    position: sticky; /* phần tử sẽ được nằm ở đầu trang khi cuộn thanh trỏ chuột, thường dùng để định dạng menu <nav> trong html */
+    position: relative; /* Xác định vị trí hiển thị của chúng có quan hệ với vị trí bình thường. Thông qua thiết lập các thuộc tính kèm theo: left, right, top, bottom */
+    position: absolute; /* phần tử hiện tại sẽ được căn theo phần tử cha gần nhất */
+}
+
+/* 13: CSS float & clear */
+img{
+    /* thuộc tính float là nổi phần tử lên 1 vị trí nào đó tùy theo yeu cẩu */
+    float: none; /* không có thuộc tính float */
+    float: left; /* phần tử trôi (nổi) sang trái */
+    float: right; /* phần tử trôi (nổi) sang phải */
+}
+p{
+    /* sử dụng thuộc tính clear để hủy đi tác động của phần tử chứa thuộc tính float phía trước */
+    clear: none; /* bị ảnh hưởng bởi thuộc tính float từ phần tử phía trước nó */
+    clear: left; /* không bị ảnh hưởng bởi thuộc tính float (với giá trị left) từ phần tử phía trước nó */
+    clear: right; /* không bị ảnh hưởng bởi thuộc tính float (với giá trị right) từ phần tử phía trước nó */
+    clear: both; /* không bị ảnh hưởng bởi thuộc tính float từ phần tử phía trước nó */
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+    border: 2px solid black;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0px 10px 10px 10px;
+    }
+    header > img{
+        width: 130px;
+        height: 130px;
+        padding: 0px;
+        margin: 0px;
+    }
+    header > h2{
+        font-weight: bold;
+        font-size: 80px;
+        margin: 0px 10px;
+    }
+    .menu1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        background-color: gray;
+        padding: 0px;
+        margin: 0px;
+    }
+    .menu1 > li{
+        width: calc(20%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid white;
+        padding: 20px 0px;
+        position: relative;
+    }
+    .menu1 > li:last-child{
+        border-right: none;
+    }
+    .menu1 > li a{
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+    }
+    .menu1 > li:hover{
+        background-color: red;
+    }
+
+    .menu2{
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        right: 0%;
+        list-style: none;
+        text-align: center;
+        background-color: gray;
+        padding: 0px;
+        margin: 0px;
+        display: none;
+    }
+    .menu2 > li{
+        padding: 20px 0px;
+        border-top: 1px solid white;
+    }
+    .menu1 > li:hover > .menu2{
+        display: block;
+    }
+    .menu2 > li:hover{
+        background-color: red;
+    }
+    section h2{
+        text-align: center;
+        padding: 25px;
+        margin: 0px;
+        font-size: 45px;
+        font-weight: normal;
+        font-style: italic;
+    }
+
+    table{
+        width: 100%;
+        border: 1px solid black;
+        border-spacing: 0px;
+        font-size: 20px;
+    }
+    table td{
+        border: 1px solid black;
+        padding: 0px 10px;
+        color: black;
+    }
+</style>
+<body>
+    <header>
+        <img src="anh.png" alt="">
+        <h2>chương trình đào tạo</h2>
+        <img src="anh.png" alt="">
+    </header>
+
+    <nav>
+        <ul class="menu1">
+            <li><a href="#">Trang chủ</a></li>
+            <li>
+                <a href="#">Lịch học</a>
+                <ul class="menu2">
+                    <li><a href="#">Ca sáng</a></li>
+                    <li><a href="#">Ca chiều</a></li>
+                    <li><a href="#">Ca tối</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Tài liệu</a></li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Đào tạo</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div><h2>Chào mừng bạn đến với trang web của chúng tôi</h2></div>
+        <table>
+            <tr>
+                <td>Lập trình C</td>
+                <td rowspan="5">
+                    <ol type="1">
+                        <li>Kĩ thuật viên tin học</li>
+                        <li style="text-decoration: underline;">Chuyên ngành Website</li>
+                    </ol>
+                    <hr>
+                    <h3 style="padding: 3px; margin: 0px;">Kỹ thuật viên tin học</h3>
+                    <a href="#" style="color: black;">Học phần I</a> <br>
+                    <a href="#" style="color: black;">Học phần II</a> <br>
+                    <a href="#" style="color: black;">Học phần III</a>
+                    <br>
+                    <ol type="I">
+                        <li>
+                            Tin học căn bản
+                            <ol type="1">
+                                <li>Tổng quan cấu trúc máy tính</li>
+                                <li>Hệ điều hành Windows</li>
+                            </ol>
+                        </li>
+                        <li>
+                            Tin học văn phòng
+                            <ol type="1">
+                                <li>Microsoft Word</li>
+                                <li>Microsoft Excel</li>
+                            </ol>
+                        </li>
+                        <li>
+                            Tin học quản lý
+                            <ol type="1">
+                                <li>Microsoft Access</li>
+                                <li>Microsoft PowerPoint</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </td>
+                <td align="center">
+                    <form action="">
+                        Đăng nhập <br>
+                        User name <input type="text" name="" id=""> <br>
+                        Password <input type="password" name="" id="">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Thiết kế Web</td>
+                <td rowspan="2" align="center"><img src="anh.png" alt="" style="width: 95%; height: 95%;"></td>
+            </tr>
+            <tr>
+                <td>Lập trình nhúng</td>
+            </tr>
+            <tr>
+                <td>Lập trình Android</td>
+                <td rowspan="2" style="font-weight: bold; font-size: 30px;">Địa chỉ liên hệ</td>
+            </tr>
+            <tr>
+                <td style="padding: 13px 10px;">Lập trình mạng</td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>

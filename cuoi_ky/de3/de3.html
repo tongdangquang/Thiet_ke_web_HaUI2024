@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header{
+    margin: 0px;
+    padding: 0px;
+    }
+    header img{
+        width: 100%;
+        height: 100px;
+        margin: 0px;
+    }
+
+    .menu1{
+        background-color: black;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu1 > li{
+        height: 50px;
+        width: calc(25%);
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid white;
+        position: relative;
+    }
+    .menu1 > li:last-child{
+        border-right: none;
+    }
+    .menu1 > li > a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        white-space: nowrap;
+    }
+    .menu1 > li:hover{
+        background-color: red;
+    }
+    .menu2{
+        position: absolute;
+        margin: 0px;
+        padding: 0px;   
+        top: 100%;
+        left: 0%;
+        right: 0%;
+        background-color: black;
+        list-style: none;
+        display: none;
+    }
+    .menu2 > li{
+        height: 50px;
+        padding: 0px;
+        margin: 0px;
+        border-top: 1px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu2 > li > a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+    .menu1 > li:hover > .menu2{
+        display: block;
+    }
+    .menu2 > li:hover{
+        background-color: red;
+    }
+
+    section{
+        margin-top: 5px;
+        display: flex;
+    }
+
+    nav{
+        width: 30%;
+        padding: 0px;
+        margin: 0px;
+        background-color: black;
+    }
+    nav > img{
+        width: 98%;
+        height: 60px;
+        padding: 0px;
+        margin: 5px 5px 0px 5px;
+    }
+    .menu3{
+        background-color: white;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    .menu3 > li{
+        padding: 0px;
+        margin: 0px;
+        border-left: 5px solid #000;
+        border-right: 2px solid #000;
+        border-top: 5px solid #000;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    .menu3 > li:last-child{
+        border-bottom: 5px solid #000;
+    }
+    .menu3 > li > a{
+        color: black;
+        font-size: 20px;
+    }
+
+    .content{
+        width: 70%;
+        font-size: 18px;
+        color: black;
+        background-color: grey;
+    }
+    .content > h1{
+        margin: 10px 0px 0px 0px;
+        padding: 0px 0px 0px 130px;
+    }
+    .content > ol{
+        padding: 0px 0px 0px 130px;
+        margin: 0px;
+    }
+    .content > p{
+        padding: 0px 0px 0px 5px;
+        margin: 36px 0px 0px 0px;
+    }
+
+    footer{
+        background-color: gray;
+        font-size: 18px;
+        text-align: center;
+        padding: 0px;
+        margin: 5px 0px 0px 0px;
+    }
+    footer > p{
+        margin: 0px;
+        padding: 15px 0px;
+    }
+</style>
+<body>
+    <header>
+        <img src="anh.png" alt="">
+        <ul class="menu1">
+            <li><a href="#">TRANG CHỦ</a></li>
+            <li><a href="#">DIỄN ĐÀN</a></li>
+            <li>
+                <a href="#">GIỚI THIỆU</a>
+                <ul class="menu2">
+                    <li><a href="#">THÀNH TỰU</a></li>
+                    <li><a href="#">THÀNH LẬP</a></li>
+                    <li><a href="#">THÀNH VIÊN</a></li>
+                </ul>
+            </li>
+            <li><a href="#">ĐĂNG NHẬP</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <nav>
+            <img src="anh.png" alt="">
+            <ul class="menu3">
+                <li><a href="#">Chương 1: Ngôn ngữ HTML...</a></li>
+                <li><a href="#">Chương 2: Front page</a></li>
+                <li><a href="#">Chương 3: Lập trình Web động</a></li>
+                <li><a href="#">Chương 4: SQL Server</a></li>
+                <li><a href="#">Chương 5: Ngôn ngữ Javascript</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>CHƯƠNG TRÌNH ĐÀO TẠO NGÀNH WEBSITE</h1> <br>
+            <ol type="I">
+                <li>
+                    THIẾT KẾ WEBSITE
+                    <ol type="1">
+                        <li>Ngôn ngữ HTML & FrontPage</li>
+                        <li>Ngôn ngữ kịch bản Javascript</li>
+                        <li>Thiết kế ảnh động Media Flash MX</li>
+                        <li>Thiết kế giao diện PhotoShop CS</li>
+                        <li>Thiết kế Website Dreamweaver MX</li>
+                    </ol>
+                </li>
+                <li>
+                    LẬP TRÌNH WEBSITE
+                    <ol type="1" start="6">
+                        <li>Ngôn ngữ HTML & FrontPage</li>
+                        <li>Ngôn ngữ kịch bản Javascript</li>
+                        <li>Thiết kế ảnh động Media Flash MX</li>
+                        <li>Thiết kế giao diện PhotoShop CS</li>
+                    </ol>
+                </li>
+            </ol>
+            <p>Mọi thông tin xin liên hệ: abcxyz.com</p>
+        </div>
+    </section>
+    <footer>
+        <p>THÔNG TIN LIÊN HỆ: email: aqiiiqiqq.gmail.com - SĐT: 0123456789</p>
+    </footer>
+</body>
+</html>

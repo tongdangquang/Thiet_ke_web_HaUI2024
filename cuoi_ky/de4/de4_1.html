@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+    font-size: 16px;
+    color: #330066;
+    }
+
+    header > img{
+        width: 100%;
+        height: 100px;
+    }
+    nav{
+        width: 20%;
+    }
+
+    .menu1 {
+        background-color: #66ffcc;
+        padding: 0px;
+        margin: 0px;
+    }
+    .menu1 > li{
+        border-top: 1px solid white;
+        padding: 15px;
+        position: relative;
+    }
+    .menu1 > li > a{
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        color: #330066;
+        white-space: nowrap;
+    }
+    .menu1 > li:hover{
+        background-color: gray;
+    }
+
+    .menu2{
+        position: absolute;
+        background-color: #66ffcc;
+        top: 0%;
+        left: 100%;
+        margin-left: 1px;
+        list-style: none;
+        padding: 0px;
+        display: none;
+    }
+    .menu2 > li{
+        border-bottom: 1px solid white;
+        padding: 15px 100px 15px 10px;
+
+    }
+    .menu2 > li > a{
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        color: #330066;
+        white-space: nowrap;
+    }
+    .menu1 > li:hover > .menu2{
+        display: block;
+    }
+    .menu2 > li:hover{
+        background-color: gray;
+    }
+    .product{
+        text-align: center;
+        padding: 15px;
+    }
+    .product > p{
+        padding: 5px;
+        margin: 0px;
+        font-size: 16px;
+        color: #330066;
+        font-weight: bold;
+    }
+    .product > div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 40px;
+    }
+    .product > div a{
+        font-size: 16px;
+        color: #330066;
+        text-decoration: none;
+    }
+
+    .tren{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .tong_the{
+        width: 60%;
+        padding: 0px;
+        margin: 10px;
+    }
+    section{
+        display: flex;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .tong_the > div:first-child{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0px 15px;
+        background-color: #66ff66;
+    }
+    .tong_the > div:first-child > h4{
+        padding: 5px;
+        margin: 0px;
+    }
+
+    .right_above{
+        border: 1px solid black;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .right_above > p:first-child{
+        background-color: black;
+        color: white;
+        margin: 0px;
+        padding: 10px 0px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .right_above > p:last-child{
+        color: #330066;
+        font-size: 16px;
+        background-color: #66ff66;
+        margin: 0px;
+        padding: 20px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .right_under{
+        margin-top: 20px;
+        padding-bottom: 50px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    .right_under > div{
+        padding: 0px;
+        margin: 30px 0px 30px 10px;
+    }
+</style>
+<body>
+    <header>
+        <img src="anh.png" alt="">
+    </header>
+    <section>
+        <nav>
+            <ul class="menu1">
+                <li><a href="#">Nội thất phòng khách</a></li>
+                <li><a href="#">Nội thất phòng ngủ</a></li>
+                <li><a href="#">Nội thất phòng khách</a></li>
+                <li>
+                    <a href="#">Nội thất phòng ăn</a>
+                    <ul class="menu2">
+                        <li><a href="#">Tủ bếp gỗ tự nhiên</a></li>
+                        <li><a href="#">Tủ bếp gỗ công nghiệp</a></li>
+                        <li><a href="#">Bàn ghế ăn</a></li>
+                        <li><a href="#">Thiết bị nhà bếp</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Nội thất phòng trẻ em</a></li>
+                <li><a href="#">Nội thất phòng làm việc</a></li>
+                <li><a href="#">Thủ công mỹ nghệ</a></li>
+                <li><a href="#">Tư vấn thiết kế</a></li>
+                <li><a href="#">Nội thất gỗ</a></li>
+                <li><a href="#">Chưng bày đồ thủ công</a></li>
+                <li><a href="#">Học việc trang trí</a></li>
+            </ul>
+        </nav>
+        
+        <div class="tong_the">
+            <div>
+                <h4>-----------------------Xưởng sản xuất đồ gỗ Hường Ngân-----------------------</h4>
+                <div>Tìm kiếm sản phẩm: <input type="text" name="" id=""></div>
+            </div>
+            <div class="tren">
+                <div class="product">
+                    <img src="anh.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p>Liên hệ: 0123456789</p>
+                    <div>
+                        <button><a href="#">Mua hàng</a></button>
+                        <button><a href="#">Chi tiết</a></button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="anh.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p>Liên hệ: 0123456789</p>
+                    <div>
+                        <button><a href="#">Mua hàng</a></button>
+                        <button><a href="#">Chi tiết</a></button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="anh.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p>Liên hệ: 0123456789</p>
+                    <div>
+                        <button><a href="#">Mua hàng</a></button>
+                        <button><a href="#">Chi tiết</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="tren">
+                <div class="product">
+                    <img src="anh.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p>Liên hệ: 0123456789</p>
+                    <div>
+                        <button><a href="#">Mua hàng</a></button>
+                        <button><a href="#">Chi tiết</a></button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="anh.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p>Liên hệ: 0123456789</p>
+                    <div>
+                        <button><a href="#">Mua hàng</a></button>
+                        <button><a href="#">Chi tiết</a></button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="anh.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p>Liên hệ: 0123456789</p>
+                    <div>
+                        <button><a href="#">Mua hàng</a></button>
+                        <button><a href="#">Chi tiết</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="width: 20%;">
+            <div class="right_above">
+                <p>XƯỞNG SẢN XUẤT ĐỒ GỖ</p>
+                <p>Không đẹp không lấy tiền</p>
+            </div>
+            <div class="right_under">
+                <p style="text-align: center; background-color: black; color: white; padding: 10px; border-top-left-radius: 10px; border-top-right-radius: 10px; margin: 0px;">XEM THÊM SẢN PHẨM</p>
+                <div>
+                    <img src="anh.png" alt="" style="width: 70px; height: 70px; float: left; margin-right: 10px;">
+                    <p style="margin: 0px; padding: 0px;">Lorem ipsum dolor sit amet consectetur. Voluptate amet nemo doloremque omnis?</p>
+                </div>
+    
+                <div style="clear: both;">
+                    <img src="anh.png" alt="" style="width: 70px; height: 70px; float: left; margin-right: 10px;">
+                    <p style="margin: 0px; padding: 0px;">Lorem ipsum dolor sit amet consectetur. Voluptate amet nemo doloremque omnis. Lorem ipsum dolor sit amet consectetur?</p>
+                </div>
+    
+                <div style="clear: both;">
+                    <img src="anh.png" alt="" style="width: 70px; height: 70px; float: left; margin-right: 10px;">
+                    <p style="margin: 0px; padding: 0px;">Lorem ipsum dolor sit amet consectetur. Voluptate amet nemo doloremque omnis?</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>

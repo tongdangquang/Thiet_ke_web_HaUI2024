@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <table border="1px" cellsapcing="0" align="center" width="400px">
+            <tr>
+                <td colspan="2" align="center">Kiểm tra mảng</td>
+            </tr>
+            <tr>
+                <td>Nhập mảng</td>
+                <td><input type="text" name="" id="array" size="40"></td>
+            </tr>
+            <tr>
+                <td>Kết quả</td>
+                <td><input type="text" name="" id="result" size="40" readonly></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="reset" value="Xóa" id="" onclick="reset_form()">
+                    <input type="button" value="Kiểm tra" id="" onclick="ket_qua()">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function reset_form()
+        {
+            document.getElementsByTagName("form")[0].reset();
+        }
+        function ket_qua()
+        {
+            var m = document.getElementById("array").value.split(", ");
+            var m1 = new Array(m.length);
+            for (var i = 0; i < m1.length; i++)
+            {
+                m1[i] = m[i].charCodeAt(0);
+            }
+            var max = Math.max(...m1);
+            var min = Math.min(...m1);
+            var range = max - min + 1;
+            var m2 = new Array(range);
+            for (var i = 0; i < range; i++)
+            {
+                m2[i] = 0;
+            }
+            for (var i = 0; i < m1.length; i++)
+            {
+                m2[m1[i] - min]++;
+            }
+            var max_index = Math.max(...m2);
+                        
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+    font-size: 16px;
+    }
+    header{
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        margin-bottom: 5px;
+    }
+    header > div > img{
+        width: 200px;   
+        height: 80px;
+        padding: 0px;
+        margin: 0px;
+    }
+    header > div > p{
+        font-style: italic;
+        margin: 5px 0px 0px 0px;
+    }
+    header > img{
+        width: 60%;
+        height: 120px;
+    }
+
+    nav > ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ffccfe;
+        padding: 0px;
+        margin: 0px;
+    }
+    nav > ul > li{
+        text-align: center;
+        width: 12.5%;
+        padding: 15px;
+        margin: 0px;
+        list-style: none;
+        border-right: 1px solid black;
+        position: relative;
+    }
+    nav > ul > li > a{
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+    }
+    nav > ul > li:hover{
+        background-color: #66ffff;
+    }
+
+    .menu2{
+        position: absolute;
+        left: 0%;
+        top: 100%;
+        right: 0%;
+        background-color: white;
+        padding: 0px;
+        margin: 0px;
+        display: none;
+    }
+    .menu2 > li{
+        list-style: none;
+        padding: 10px 30px;
+        text-align: left;
+    }
+    .menu2 > li > a{
+        text-decoration: none;
+        color: black;
+    }
+    .menu2 > li:hover{
+        border-bottom: 1px solid black;
+    }
+    nav > ul > li:hover > .menu2 {
+        display: block;
+    }
+
+    section{
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+
+    .ct1{
+        display: flex;
+    }
+    .ct1 > img{
+        width: 350px;
+        height: 400px;
+        margin-right: 5px;
+    }
+    .ct1_1_1{
+        display: flex;
+    }
+    .ct1_1_1 > img{
+        height: 90px;
+        width: 90px;
+        margin: 5px;
+    }
+    .ct1_1_1 > a{
+        text-decoration: none;
+        color: black;
+        width: 450px;
+    }
+
+    .ct2{
+        text-align: center;
+        background-color: grey;
+        margin-right: 5px;
+        border-bottom: 1px solid white;
+    }
+    .ct2 > p{
+        font-weight: bold;
+        color: white;
+        padding: 0px 0px 20px 0px;
+        margin: 10px;
+        border-bottom: 1px solid white;
+    }
+    .ct2 img{
+        padding: 0px;
+        margin: 10px 0px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .ct3{
+        background-color: gray;
+        text-align: center;
+        margin-top: 18.72px;
+        margin-left: 10px;
+    }
+    .ct3 img{
+        margin: 0px 15px;
+        padding: 0px;
+        width: 250px;
+        height: 150px;
+    }
+    .ct3 a{
+        text-decoration: none;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    section img:hover{
+        transform: scale(120%);
+    }
+
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: grey;
+        margin: 5px 0px;
+    }
+    footer > div{
+        display: flex;
+        margin: 0px 100px;
+        color: white;
+    }
+    footer p{
+        margin: 0px 10px;
+        padding: 10px;
+    }
+</style>
+<body>
+    <header>
+        <div>
+            <img src="anh.png" alt="">
+            <p>Kiến Tạo Không gian Việt Thoáng Xanh</p>
+        </div>
+        <img src="anh.png" alt="">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Trang Chủ</a></li>
+            <li><a href="#">Biệt Thự</a></li>
+            <li><a href="#">Nhà Phố</a></li>
+            <li><a href="#">Nhà Cấp 4</a></li>
+            <li><a href="#">Nhà Ông</a></li>
+            <li><a href="#">Nhà Vườn</a></li>
+            <li><a href="#">Nhà Nông Thôn</a></li>
+            <li>
+                <a href="#">Nội Thất</a>
+                <ul class="menu2">
+                    <li><a href="#">Nhà Bếp</a></li>
+                    <li><a href="#">Phòng Ngủ</a></li>
+                    <li><a href="#">Phòng Khách</a></li>
+                    <li><a href="#">Nhà Tắm</a></li>
+                    <li><a href="#">Cầu Thang</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+        <div>
+            <h3>MẪU BIỆT THỰ</h3>
+            <div class="ct1">
+                <img src="anh.png" alt="">
+                <div class="ct1_1">
+                    <div class="ct1_1_1">
+                        <img src="anh.png" alt="">
+                        <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Saepe ut in iusto fugit reprehenderit, nihil ratione tempora est? Ex sunt reprehenderit dolorem, consequuntur.</a>
+                    </div>
+                    <div class="ct1_1_1">
+                        <img src="anh.png" alt="">
+                        <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Saepe ut in iusto fugit reprehenderit, nihil ratione tempora est? Ex sunt reprehenderit dolorem, consequuntur.</a>
+                    </div>
+                    <div class="ct1_1_1">
+                        <img src="anh.png" alt="">
+                        <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Saepe ut in iusto fugit reprehenderit, nihil ratione tempora est? Ex sunt reprehenderit dolorem, consequuntur.</a>
+                    </div>
+                    <div class="ct1_1_1">
+                        <img src="anh.png" alt="">
+                        <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Saepe ut in iusto fugit reprehenderit, nihil ratione tempora est? Ex sunt reprehenderit dolorem, consequuntur.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3>MẪU NHÀ BẾP</h3>
+            <div class="ct2">
+                <img src="anh.png" alt="">
+                <p>Nội thất nhà bếp bằng gỗ mang phong cách mộc mạc...</p>
+                <img src="anh.png" alt="">
+            </div>
+        </div>
+        <div class="ct3">
+            <h3><a href="#">Có mã giảm đễn 15%</a></h3>
+            <img src="anh.png" alt="">
+            <h3><a href="#">MUA NGAY</a></h3>
+            <img src="anh.png" alt="">
+            <h3><a href="#">MUA NGAY</a></h3>
+        </div>
+    </section>
+    
+    <footer>
+        <div>
+            <p>0123456789</p>
+            <p>abcdef@gmail.com</p>
+        </div>
+        <form action="">
+            <input type="text" name="" id="" placeholder="Tìm kiếm">
+        </form>
+    </footer>
+</body>
+</html>

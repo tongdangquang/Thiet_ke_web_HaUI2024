@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td>Nhập chuỗi: </td>
+                <td><input type="text" name="" id="str"></td>
+            </tr>
+            <tr>
+                <td>Nhập từ: </td>
+                <td><input type="text" name="" id="word"></td>
+            </tr>
+            <tr>
+                <td>Thông báo: </td>
+                <td><input type="text" name="" id="result" readonly></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="Kiểm tra" onclick="check()">
+                    <input type="reset" value="Hủy bỏ" onclick="reset_form()">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function check()
+        {
+            var str = document.getElementById("str").value;
+            var word = document.getElementById("word").value;
+            if(str.length > 255)
+            {
+                alert("Vui lòng nhập chuỗi không quá 255 ký tự!");
+                return;
+            }
+            var m = str.split(" ");
+            var tong = 0;
+            for (var i = 0; i < m.length; i++)
+            {
+                if(m[i] == word)
+                    tong++;
+            }
+            document.getElementById("result").value = "Từ " + word + " xuất hiện " + tong + " lần.";
+        }
+        function reset_form()
+        {
+            document.getElementsByTagName("form")[0].reset();
+        }
+    </script>
+</body>
+</html>

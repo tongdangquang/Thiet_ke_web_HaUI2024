@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- thẻ <meta> -->
+    <!-- xác định từ khóa cho cỗ máy tìm kiếm -->
+    <meta name="keywords" content="HTML, CSS, XML, XHTML, Javascript">
+    <!-- mô tả trang web -->
+    <meta name="descripion" content="web page design">
+    <!-- xác định tên tác giả -->
+    <meta name="author" content="CNTT">
+    <!-- xác định charset cho trang web -->
+    <meta charset="UTF-8">
+    <!-- xác định thời gian làm mới cho trang web -->
+    <meta http-equiv="refresh" content="300"> <!--trong trường hợp này, cứ mỗi 300s trang web sẽ load lại 1 lần-->
+
+<!-- thẻ <a href=""></a> dùng để tạo liên kết, đi kèm với attribute href để xác định URL -->
+    <a href="link_url"> "Hello World" </a>
+
+<!-- thẻ <img src="" alt=""> dùng để chèn hình ảnh vào trang web, đi kèm với attribute src xác định đường dẫn đến ảnh  -->
+    <img src="images_link.png" alt="This is a image...">
+
+<!-- thẻ <audio src=""></audio> để sử dụng âm thanh vào trang web -->
+    <audio src="" controls></audio> <!-- hiển thị thanh điều khiển (play, pause, volume,...) trên trang web -->
+    <audio src="" controls autoplay></audio> <!-- tự động phát âm thanh khi được tải -->
+    <audio src="" controls loop></audio> <!-- lặp lại khi âm thanh kết thúc -->
+    <audio src="" controls preload="auto; metadata; none"></audio> <!-- xác định cách trình duyệt nên tải dữ liệu âm thanh. Các giá trị có thể là "none", "metadata", hoặc "auto" -->
+    <audio src="" controls muted ></audio> <!-- tắt tiếng âm thanh mặc định -->
+    <audio src="" controls volume="0.5"></audio> <!-- xác định âm lượng mặc định từ 0 -> 1 -->
+    <audio src="" type="audio/mpeg; audio/ogg; audio/wav"></audio> <!-- thuộc tính type sử dụng để chỉ định kiểu định dạng của tệp âm thanh cung cấp bởi src -->
+
+<!-- thẻ <video src=""></video> để sử dụng video vào trang web -->
+    <video src="" controls autoplay loop muted preload="auto; metadata; none"></video> <!-- các thuộc tính tương tự như audio -->
+    <video src="" height="number" width="number"></video> <!-- định dạng chiều dài và chiều rộng của video tải lên -->
+    <video src="" controls poster="video_poster.jpg"></video> <!-- xác định hình ảnh hiển thị khi video không phát -->
+    <audio src="" type="video/mpeg; video/mp4; video/WebM"></audio> <!-- thuộc tính type sử dụng để chỉ định kiểu định dạng của tệp video cung cấp bởi src -->
+
+<!-- thẻ trình bày trang web -->
+    <!-- thẻ tiêu đề từ <h1> -> <h6> theo thứ tự quan trọng nhất và giảm dần -->
+    <h1>Heading 1</h1>
+    <h2>.........</h2>
+    <h6>Heading 6</h6>
+    <!-- thẻ <p> </p> để tạo đoạn văn bản -->
+    <p>This is a paragraph</p>
+    <!-- thẻ <br> dùng để xuống dòng -->
+    <p>This <br> is <br> a <br> paragraph</p>
+    <!-- thẻ <hr> dùng để chèn 1 dòng kẻ ngang phân tách các phần của trang web -->
+    <h1>heading 1</h1>
+    <hr>
+    <h2>Heading 2</h2>
+    <!-- thẻ <pre> </pre> giữ nguyên định dạng văn bản -->
+    <pre>
+        Hello
+        World
+    </pre>
+    <!-- thẻ <b></b> dùng để in đậm đoạn văn bản -->
+    <b>Hello World</b>
+    <!-- <strong></strong> dùng để nhấn mạnh nội dung quan trọng, thường in đậm -->
+    <strong>Hello world</strong>
+    <!-- thẻ <i></i> dùng để in nghiêng đoạn văn bản -->
+    <i>Hello world</i>
+    <!-- thẻ <em></em> dùng để nhấn mạnh nội dung quan trọng, thường in nghiêng -->
+    <em>Hello world</em>
+    <!-- thẻ <small></small> để hiển thị chữ nhỏ hơn bình thường -->
+    <small>Hello world</small>
+    <!-- thẻ <mark></mark> dùng để nhấn mạnh nội dung, thường sẽ bôi màu đoạn văn cần nhấn mạnh -->
+    <mark>Hello world</mark>
+    <!-- thẻ <del></del> dùng để xóa văn bản, thường gạch ngang văn bản càn xóa -->
+    <del>Hello world</del>
+    <!-- thẻ <ins></ins> dùng để gạch chân văn bản -->
+    <ins>Hello world</ins>
+
+<!-- thẻ tạo chỉ só trên và dưới -->
+    m<sup>2</sup> <!-- thẻ tạo chỉ số trên -->
+    H<sub>2</sub>O <!-- thẻ tạo chỉ số dưới -->
+
+<!-- thẻ tạo danh sách -->
+    <!-- thẻ <ul></ul> dùng để định nghĩa danh sách không có thứ tự -->
+    <!-- thẻ <li></li> dùng để định nghĩa các mục trong danh sách -->
+    <ul type="disc; square; circle">
+        <li>name1</li>
+        <li>name2</li>
+        <li>name3</li>
+    </ul>
+    <!-- thẻ <ol></ol> dùng để định nghĩa danh sách có thứ tự, có thể là chữ hoặc số -->
+    <ol type="a|A|I|i|1" start="number">
+        <li>name1</li>
+        <li>name2</li>
+        <li>name3</li>
+    </ol>
+
+    <!-- thẻ <dl></dl> dùng để định nghĩa danh sách mô tả, kết hợp với thẻ <dt></dt> để tạo tên và thẻ <dd></dd> để mô tả cho tên -->
+    <dl> <!-- thẻ này dùng để bao bọc toàn bộ danh sách -->
+        <dt>Hello world</dt>
+            <dd>Hello world</dd>
+        <dt>Hello world</dt>
+            <dd>Hello world</dd>
+    </dl>
+
+<!-- thẻ tạo bảng -->
+    <!-- thẻ <table></table> dùng để tạo và chèn bảng -->
+    <table border="2px solid back"></table> <!-- xác định độ rộng đường viền xung quanh bảng, giá trị là 1 số nguyên -->
+    <table width="n%; npx"> hello world </table> <!-- xác định chiều ngang của bảng -->
+    <table height="n%; npx"></table> <!-- xác định chiều cao của bảng -->
+    <table cellpadding="10"></table> <!-- xách định khoản cách giữa nội dung của ô và ranh giới của ô hay chính là độ lớn của mỗi ô -->
+    <table cellspacing="4"></table> <!-- xác định khoảng cách giữa các ô trong bảng -->
+    <table align="center; left; right"></table> <!-- xác định căn chỉnh của bảng -->
+    <table bgcolor="color name; rgb(x, x, x); #xxxxxx"></table> <!-- xác định màu nền của bảng -->
+    
+    <!-- để tạo một dòng trong bảng ta sử dụng thẻ <tr></tr> với các thuộc tính -->
+    <tr align="center; left; right; justify"></tr> <!-- căn chỉnh chiều ngang của nội dung trong hàng -->
+    <tr valign="top; middle, bottom"></tr> <!-- căn chỉnh chiều dài của nội dung trong hàng-->
+    <tr bgcolor="name color; rgb(x, x, x); #xxxxxx"></tr> <!-- xác định màu nền của hàng -->
+
+    <!-- để tạo tiêu đề cho bảng ta dùng thể <th></th> với các thuộc tính như sau -->
+    <th align="left; center; right" width="n%; n px" bgcolor="name color; rgb(x, x, x); #xxxxxx"></th> <!-- tương tự -->
+    <th colspan="number"></th> <!-- dùng colspan để trộn 2 hoặc nhiều cột thành 1 cột -->
+    <th rowspan="number"></th> <!-- dùng colspan để trộn 2 hoặc nhiều hàng thành 1 hàng -->
+
+    <!-- để tạo ô cho bảng ta dùng thể <td></td> với các thuộc tính như sau -->
+    <td align="left; center; right" width="n%; n px" bgcolor="name color; rgb(x, x, x); #xxxxxx" colspan="number" rowspan="number"></td> <!-- tương tự -->
+        
+    <!-- để tạo caption cho bảng ta sử dụng thể <caption></caption>, thẻ caption được đặt ngay sau thẻ <table> -->
+    <caption>This is a table</caption>
+
+    <!-- sử dụng thẻ <colgroup></colgroup> và <col> đẻ định dạng các cột giống nhau trong bảng và phải đặt ngay sau thẻ <caption></caption> -->
+    <colgroup>
+        <col span="2" style="background-color: red"> <!-- ví dụ chọn 2 cột đầu (span="") của bảng có định dạng màu đỏ (background-color="") -->
+    </colgroup>
+
+    <!-- sử dụng các thẻ <thead></thead> (đầu bảng), <tbody></tbody> (thân bảng), <tfoot></tfoot> (chân bảng) để tách bảng thành các phần riêng -->
+    <thead></thead>
+    <tbody></tbody>
+    <tfoot></tfoot>
+
+    <!-- thẻ <span></span> dùng để nhóm các phần tử nhất định để thực hiện chung 1 định dạng -->
+    <span style="background: yellow;"></span>
+</body>
+</html>

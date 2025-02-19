@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Form dữ liệu</h3>
+    <!-- 
+        Các loại type trong thẻ input:
+        text: nhập văn bản text
+        password: nhập mật khẩu
+        submit: tạo một nút submit form
+        reset: reset và trả về giá trị mặc định
+        button: tạo một nút lệnh
+        radio: tạo nút tròn (tô đen ô chọn)
+        checkbox: tạo nút vuông (đánh dấu tích ô đó)
+        color: dùng để tạo hộp nhập màu
+        date: dùng để tạo hộp nhập ngày
+        email: tạo hộp nhập email
+        file: dùng lựa chọn file cần upload
+        number: nhập số
+        range: tạo 1 thành trượt, kèm theo min và max (giống kiểu điều chỉnh âm thanh)
+        time: dùng để nhập thời gian
+        url: nhập địa chỉ url
+        week: cho phép người dùng chọn nhập tuần và năm
+     -->
+    <form action="helloworld.html" method="get" autocomplete=""> <!--action: đích gửi dữ liệu, method: phương thức gửi dữ liệu (get: dữ liệu đuợc gửi đến server thông qua đường dẫn url, post: dữ liệu sẽ được gửi thông qua http request), autocomplete: tự động nhập dữ liệu nếu trước đó người dùng đã nhập-->
+       
+        <fieldset> <!--sử dụng thẻ fieldset để nhóm các đối tượng-->
+            <legend>Username and Password</legend> <!--thẻ legend để hiện thị tiêu đề của ô đang nhóm-->
+             <!-- Tạo ô nhập tài khoản, mật khẩu -->
+            <label for="Username">Username: </label> <!--thể label dùng để chứa nhãn hiển thị trên trang web-->
+            <!-- thuộc tính for của label phải trùng với thuộc tính id của input -->
+            <input type="text" name="Username" id="Username" placeholder="Username" autofocus=""> <br><!--thẻ input để nhập vào nhiều kiểu dữ liệu khác nhau trên trang web, placeholder: để hiển thị gợi ý trong ô nhập dữ liệu, autofocus: để lúc mở trang web, con trỏ chuột sẽ tự động đặt tại ô có autofocus-->
+            <label for="Password">Password : </label>
+            <input type="password" name="Password" id="Password" placeholder="Password"> <br> <!--type: password, number, color,... -->
+        </fieldset>
+       
+        <!-- Tạo lựa chọn chỉ được chọn 1 -->
+        <!-- Để người dùng chỉ được chọn 1 ô thì name trong input phải trùng nhau-->
+        <label for="Gender">Gender: </label>
+        <input type="radio" value="male" name="Gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" value="female" name="Gender" id="female">
+        <label for="female">Female</label><br>
+
+        <!-- Tạo checkbox -->
+        <label for="Hobbies">Hobbies:</label> <br>
+        <input type="checkbox" name="Hobbies[]" value="Listen to music" id="Listen to music"> <!--sử dụng thêm checked="" để tích mặc định cho ô checkbox-->
+        <label for="Listen to music">Listen to music</label> <br>
+        <input type="checkbox" name="Hobbies[]" value="Play sports" id="Play sports">
+        <label for="Play sports">Play sports</label> <br>
+        <input type="checkbox" name="Hobbies[]" value="Travel" id="Travel">
+        <label for="Travel">Travel</label> <br>
+
+        <!-- Tạo combo box -->
+        <label for="">Birthday: </label>
+        <select name="day" id="">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <select name="month" id="">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <select name="year" id="">
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+        </select>
+        <br>
+
+        <!-- Tạo lịch để lựa chọn ngày, tháng, năm -->
+        <label for="bday">Ngày, tháng, năm sinh: </label>
+        <input type="date" name="bday" id="bday">
+        <br>
+
+        <!-- Tạo list box -->
+        <label for="">Major:</label>
+        <select name="Major" id="" size="4" multiple=""> <!--size: quản lý số lượng option được hiển thị trên trang web, muntiple: cho phép chọn nhiều option-->
+            <option value="Công_nghệ_thông_tin">Công nghệ thông tin</option>
+            <option value="Kế_toán">Kế toán</option>
+            <option value="Điện_tử">Điện tử</option>
+            <option value="Cơ_khí">Cơ khí</option>
+        </select>
+        <br>
+
+        <!-- Tạo hộp nhập văn bản nhiều dòng -->
+        <label for="Note">Note:</label>
+        <textarea name="Note" id="Note" cols="30" rows="10"></textarea>
+        <br>
+
+        <!-- Tạo nút -->
+        <!-- Cách 1:  -->
+        <input type="submit" value="Submit" id="">
+        <input type="button" value="Button" id="">
+        <!-- Cách 2:  -->
+        <button type="reset">Reset</button> <br>
+    </form>
+</body>
+</html>
+ 

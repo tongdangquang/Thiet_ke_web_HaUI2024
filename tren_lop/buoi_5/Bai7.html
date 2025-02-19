@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Giới tính</label> <br>
+        <input type="radio" name="choose" id="nam" value="nam">
+        <label for="">Nam</label> <br>
+        <input type="radio" name="choose" id="nu" value="nu">
+        <label for="">Nữ </label> <br>
+        <input type="button" value="OK" onclick="sex()">
+    </form>
+    <div id="result"></div>
+    <script>
+        function sex()
+        {
+            if(document.getElementById("nam").checked)
+            {
+                document.getElementById("result").innerHTML = "Bạn là nam";
+            }
+            else if(document.getElementById("nu").checked)
+            {
+                document.getElementById("result").innerHTML = "Bạn là nữ";
+            }
+            else
+            {
+                document.getElementById("result").innerHTML = "Vui lòng chọn lại";
+            }
+        }
+    </script>
+</body>
+</html>

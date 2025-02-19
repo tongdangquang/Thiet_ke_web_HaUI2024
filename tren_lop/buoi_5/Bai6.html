@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="" id="n1">
+        +
+        <input type="text" name="" id="n2">
+        <input type="button" value="=" onclick="tinh_tong()">
+        <input type="text" id="result" readonly>
+    </form>
+    <script>
+        function tinh_tong()
+        {
+            var a = parseInt(document.getElementById("n1").value);
+            var b = parseInt(document.getElementById("n2").value);
+            if(isNaN(a) || isNaN(b))
+            {
+                alert("Nhập số tự nhiên.");
+                return;
+            }
+            var t = a + b;
+            document.getElementById("result").value = t;
+        }
+    </script>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function tong()
+        {
+            var x = parseInt(window.document.nhap.a.value);
+            var y = parseInt(window.document.nhap.b.value);
+            var z = x + y;
+            window.document.nhap.to.value = z;
+        }
+    </script>
+    <form action="" name="nhap">
+        Số 1: <input type="text" name="a" id=""> <br>
+        Số 2: <input type="text" name="b" id=""> <br>
+        Tổng: <input type="text" name="to">
+        <input type="button" value="Tổng số" onclick="tong()">
+    </form>
+</body>
+</html> -->

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: white;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td align="center" colspan="2"><h1>ĐĂNG KÝ THÔNG TIN</h1></td>
+            </tr>
+            <tr>
+                <td>Tên đăng nhập: </td>
+                <td><input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>Mật khẩu: </td>
+                <td><input type="password" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>Giới tính: </td>
+                <td>
+                    <input type="radio" name="gender" value="nam" checked>Nam
+                    <input type="radio" name="gender" value="nu">Nữ
+                </td>
+            </tr>
+            <tr>
+                <td>Số điện thoại: </td>
+                <td><input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>Giới thiệu: </td>
+                <td><textarea name="" id="content" cols="10" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Đăng ký" onclick="return check()">
+                    <input type="reset" value="Hủy bỏ" onclick="reset_form()">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function check()
+        {
+            var ip = document.getElementsByTagName("input");
+            var n = ip[0].value;
+            var pw = ip[1].value;
+            var np = ip[4].value;
+            var ct = document.getElementById("content").value;
+            if(ip == "" || n == "" || np == "" || ct == "")
+            {
+                alert("Vui lòng nhập đầy đủ thông tin!");
+                return false;
+            }
+            
+            var regex = /^[0-9.-]+$/;
+            if(!regex.test(np))
+            {
+                alert("Số điện thoại chỉ được nhập số hoặc các kí tự đặc biệt bao gồm dấu chấm \".\" và dấu trừ \"-\"");
+                return false;
+            }
+            var cf = confirm("Bạn chắc chắn muốn đăng ký thông tin?");
+            if(cf)
+            {
+                alert("Thông tin đã được đăng ký thành công!");
+            }
+            else
+            {
+                return false;
+            }
+        }
+        function reset_form()
+        {
+            document.getElementsByTagName("form")[0].reset();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        font-weight: bold;
+    }
+</style>
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td>Nhập số nguyên: </td>
+                <td><input type="text" name="" id="number" size="30"></td>
+            </tr>
+            <tr>
+                <td>Số chữ số lẻ: </td>
+                <td><input type="text" name="" id="result" readonly size="30"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="Đếm" onclick="check()">
+                    <input type="reset" value="Hủy bỏ" onclick="reset_form()">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function check()
+        {
+            var m = document.getElementById("number").value.split("");
+            for(var i = 0; i < m.length; i++)
+            {
+                m[i] = parseInt(m[i]);
+                if(isNaN(m[i]) || m[i] <= 0)
+                {
+                    alert("Vui lòng nhập lại một số nguyên dương!");
+                    return;
+                }
+            }
+            var m2 = [];
+            for (var i = 0; i < m.length; i++)
+            {
+                if(m[i] % 2 != 0)
+                {
+                    m2.push(m[i]);
+                }
+            }
+            document.getElementById("result").value = "có " + m2.length + " chữ số lẻ là (" + m2.join(", ") + ")";
+        }
+        function reset_form()
+        {
+            document.getElementsByTagName("form")[0].reset();
+        }
+    </script>
+</body>
+</html>

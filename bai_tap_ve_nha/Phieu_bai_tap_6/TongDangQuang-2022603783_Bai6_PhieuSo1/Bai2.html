@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td><input type="text" name="number1" id=""></td>
+                <td><input type="text" name="number1" id=""></td>
+                <td><input type="text" name="number1" id=""></td>
+                <td><input type="text" name="number1" id=""></td>
+                <td><input type="text" name="number1" id=""></td>
+                <td><input type="text" value="+" readonly></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="number2" id=""></td>
+                <td><input type="text" name="number2" id=""></td>
+                <td><input type="text" name="number2" id=""></td>
+                <td><input type="text" name="number2" id=""></td>
+                <td><input type="text" name="number2" id=""></td>
+                <td><input type="button" value="=" onclick="tinh_tong()"></td>
+            </tr>
+        </table>
+    </form>
+    <div>Kết quả: <span id="result"></span></div>
+    <script>
+        function tinh_tong()
+        {
+            var m1 = document.getElementsByName("number1");
+            var str1 = "";
+            for (var i = 0; i < m1.length; i++)
+            {
+                str1 += m1[i].value;
+            }
+            var n1 = parseInt(str1);
+
+            var m2 = document.getElementsByName("number2");
+            var str2 = "";
+            for (var i = 0; i < m2.length; i++)
+            {
+                str2 += m2[i].value;
+            }
+            var n2 = parseInt(str2);
+            var n = n1 + n2;
+            document.getElementById("result").innerHTML = n;
+        }
+    </script>
+</body>
+</html>

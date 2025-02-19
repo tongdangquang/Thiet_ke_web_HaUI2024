@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header > div:first-child{
+    padding: 0px;
+    margin: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    header > div:first-child > p{
+        color: white;
+        background-color: red;
+        padding: 10px 60px;
+        font-size: 18px;
+    }
+    header > div:first-child > img{
+        width: 400px;
+        height: 100px;
+    }
+    header{
+        border: 3px solid black;
+    }
+
+    .menu1{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding: 0px;
+        margin: 0px;
+        background-color: #999999;
+        list-style: none;
+    }
+    .menu1 > li{
+        text-align: center;
+        padding: 10px 60px;
+        margin: 0px;
+        border: 1px solid black;
+        border-left: none;
+        border-bottom: none;
+    }
+    .menu1 a{
+        color: black;
+        text-decoration: none;
+    }
+    .menu1 > li:hover{
+        background-color: red;
+    }
+    .menu1 > li:hover > a{
+        color: white;
+    }
+
+    section{
+        margin: 5px 0px;
+        display: flex;
+    }
+    nav{
+        width: 20%;
+    }
+    .menu2{
+        margin: 0px;
+        padding: 0px;
+        background-color: #cccccc;
+    }
+    .menu2 > li{
+        padding: 10px;
+        font-size: 18px;
+        position: relative;
+    }
+    .menu2 > li:hover{
+        color: #ffff00;
+    }
+    .menu3{
+        position: absolute;
+        top: 0%;
+        left: 100%;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        white-space: nowrap;
+        display: none;
+        background-color: white;
+    }
+    .menu3 > li{
+        padding: 10px;
+        font-size: 18px;
+    }
+    .menu3 > li > a{
+        color: black;
+        text-decoration: none;
+    }
+    .menu2 > li:hover > .menu3{
+        display: block;
+    }
+
+    .left{
+        width: 15%;
+        margin: 0px 10px;
+
+    }
+    .phone{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 0px 30px 0px;
+    }
+    .left > p{
+        font-size: 22px;
+        background-color: #ffff00;
+        padding: 10px;
+    }
+    .right{
+        width: 65%;
+    }
+    .menu4{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding: 0px;
+        margin: 0px;
+    }
+    .menu4 > li{
+        padding: 5px 0px;
+        margin: 0px 10px;
+    }
+
+    .device{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 5px 0px;
+    }
+    .device > div{
+        width: 180px;
+        margin: 0px 20px;
+    }
+    .device > div > p:last-child{
+        color: red;
+    }
+    .device span{
+        color: white;
+        background-color: red;
+        margin-left: 10px;
+    }
+
+    .name_device:hover{
+        color: red;
+    }
+    section img:hover{
+        transform: scale(120%);
+    }
+</style>
+<body>
+    <header>
+        <div>
+            <img src="anh.png" alt="">
+            <p>Giỏ hàng</p>
+        </div>
+        <div>
+            <ul class="menu1">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PHỤ KIỆN</a></li>
+                <li><a href="#">SỬA CHỮA</a></li>
+                <li><a href="#">SALE</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">GÓP Ý</a></li>
+                <li><a href="#">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section>
+        <nav>
+            <ul class="menu2">
+                <li>
+                    Galaxy Note
+                    <ul class="menu3">
+                        <li><a href="#">Galaxy Note 10+</a></li>
+                        <li><a href="#">Note 8 N950</a></li>
+                        <li><a href="#">Note 4 N910</a></li>
+                    </ul>
+                </li>
+                <li>Galaxy S-series</li>
+                <li>Galaxy A, E, J-series</li>
+                <li>Galaxy Model 2018</li>
+                <li>Galaxy Model 2017</li>
+                <li>Galaxy Model 2016</li>
+                <li>Galaxy Smart Watch</li>
+                <li>Galaxy Tab</li>
+            </ul>
+        </nav>
+
+        <div class="left">
+            <p>GALAXY NOTE</p>
+            <div class="phone">
+                <div style="text-align: center;">
+                    <img src="anh.png" alt="" style="width: 40px; height: 90px;">
+                    <p class="name_device" style="font-size: 14px;">GALAXY NOTE 10+</p>
+                </div>
+                <div style="text-align: center;">
+                    <img src="anh.png" alt="" style="width: 40px; height: 90px;">
+                    <p class="name_device" style="font-size: 14px;">GALAXY NOTE 10+</p>
+                </div>
+            </div>
+            <div class="phone">
+                <div style="text-align: center;">
+                    <img src="anh.png" alt="" style="width: 40px; height: 90px;">
+                    <p class="name_device" style="font-size: 14px;">GALAXY NOTE 10+</p>
+                </div>
+                <div style="text-align: center;">
+                    <img src="anh.png" alt="" style="width: 40px; height: 90px;">
+                    <p class="name_device" style="font-size: 14px;">GALAXY NOTE 10+</p>
+                </div>
+            </div>
+            <div class="phone">
+                <div style="text-align: center;">
+                    <img src="anh.png" alt="" style="width: 40px; height: 90px;">
+                    <p class="name_device" style="font-size: 14px;">GALAXY NOTE 10+</p>
+                </div>
+                <div style="text-align: center;">
+                    <img src="anh.png" alt="" style="width: 40px; height: 90px;">
+                    <p class="name_device" style="font-size: 14px;">GALAXY NOTE 10+</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <ul class="menu4">
+                <li>Galaxy note 10+</li>
+                <li>Galaxy note 10+</li>
+                <li>Galaxy note 10+</li>
+                <li>Galaxy note 10+</li>
+                <li>Galaxy note 10+</li>
+                <li>Galaxy note 10+</li>
+            </ul>
+            <div class="device">
+                <div style="text-align: left;">
+                    <img src="anh.png" alt="" style="width: 180px; height: 300px;">
+                    <p class="name_device"> Tai nghe gaming AKG Y800 chính hãng SSVN</p>
+                    <p>1.900.000 đ <span>-5%</span></p>
+                    <p>1.000.000 đ</p>
+                </div>
+                <div style="text-align: left;">
+                    <img src="anh.png" alt="" style="width: 180px; height: 300px;">
+                    <p class="name_device"> Tai nghe gaming AKG Y800 chính hãng SSVN</p>
+                    <p>1.900.000 đ <span>-5%</span></p>
+                    <p>1.000.000 đ</p>
+                </div>
+                <div style="text-align: left;">
+                    <img src="anh.png" alt="" style="width: 180px; height: 300px;">
+                    <p class="name_device"> Tai nghe gaming AKG Y800 chính hãng SSVN</p>
+                    <p>1.900.000 đ <span>-5%</span></p>
+                    <p>1.000.000 đ</p>
+                </div>
+                <div style="text-align: left;">
+                    <img src="anh.png" alt="" style="width: 180px; height: 300px;">
+                    <p class="name_device"> Tai nghe gaming AKG Y800 chính hãng SSVN</p>
+                    <p>1.900.000 đ <span>-5%</span></p>
+                    <p>1.000.000 đ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

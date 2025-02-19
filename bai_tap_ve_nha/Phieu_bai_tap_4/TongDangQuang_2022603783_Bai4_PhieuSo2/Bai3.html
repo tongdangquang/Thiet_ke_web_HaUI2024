@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .menu1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: blue;
+        width: 610px;
+        height: 50px;
+        margin: 0px auto;
+        padding: 0px;
+    }
+    .menu1 > li{
+        list-style: none;
+        padding: 15px 20px;
+        border: 1px solid white;
+        position: relative;
+    }
+    .menu1 > li:hover{
+        background-color: red;
+    }
+    .menu1 > li > a{
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+    }
+
+    .menu2{
+      position: absolute;
+      top: 100%;
+      background: blue;
+      list-style: none;
+      left: -164%;
+      white-space: nowrap;
+      padding-left: 0px;
+      display: flex;
+
+    }
+    .menu2 > li{
+      padding: 15px;
+      border: 1px solid white;
+      display: none;
+    }
+    .menu2 > li> a{
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+    }
+    .menu1 > li:hover > .menu2 > li{
+      display: block;
+    }
+    .menu1 > li:hover > .menu2 > li:hover{
+      background-color: red;
+    }
+
+</style>
+<body>
+    <nav>
+        <ul class="menu1">
+            <li><a href="#">Chính trị - xã hội</a></li>
+            <li>
+              <a href="#">Thế giới</a>
+              <ul class="menu2">
+                <li><a href="#">Thư viện pháp luật</a></li>
+                <li><a href="#">Sống khỏe</a></li>
+                <li><a href="#">Pháp luật</a></li>
+            </ul>
+            </li>
+            <li><a href="#">Nhịp sống trẻ</a></li>
+            <li><a href="#">Giáo dục</a></li>
+            <li><a href="#">Kinh tế</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

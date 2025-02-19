@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Nhập số: </label>
+        <input type="text" name="" id="number">
+        <input type="button" value="OK" onclick="check_number()">
+    </form>
+    <div id="result"></div>
+    <script>
+        function check_number()
+        {
+            var n = parseInt(document.getElementById("number").value);
+            if(isNaN(n))
+            {
+                alert("Nhập 1 số tự nhiên.");
+                return;
+            }
+            if(n % 2 == 0)
+            {
+                document.getElementById("result").innerHTML = "Số " + n + " là số chẵn.";
+            }
+            else
+            {
+                document.getElementById("result").innerHTML = "Số " + n + " là số lẻ.";
+            }
+        }
+    </script>
+</body>
+</html>

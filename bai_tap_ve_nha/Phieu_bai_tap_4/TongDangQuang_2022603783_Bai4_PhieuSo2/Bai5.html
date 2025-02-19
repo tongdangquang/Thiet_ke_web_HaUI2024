@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .menu1 {
+      list-style: none;
+      background-color: blue;
+      width: 200px;
+      padding: 0px;
+    }
+    .menu1 > li {
+      padding: 10px 20px;
+      border-top: 1px solid white;
+      position: relative;
+    }
+    .menu1 > li:first-child {
+      border-top: none;
+    }
+    .menu1 > li > a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+    }
+    .menu1 > li:hover {
+      background-color: red;
+    }
+
+    .menu2 {
+      position: absolute;
+      top: 0%;
+      left: 100%;
+      list-style: none;
+      width: 200px;
+      padding: 0px;
+      display: none;
+    }
+    .menu2 > li {
+      padding: 10px 20px;
+      background-color: blue;
+      border-top: 1px solid white;
+      border-left: 1px solid white;
+    }
+    .menu2 > li:first-child {
+      border-top: none;
+    }
+    .menu2 > li > a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+    }
+    .menu2 > li:hover {
+      background-color: red;
+    }
+    .menu1 > li:hover > .menu2 {
+      display: block;
+    }
+  </style>
+  <body>
+    <ul class="menu1">
+      <li>
+        <a href="#">Chính trị - xã hội</a>
+        <ul class="menu2">
+            <li><a href="#">Thư viện pháp luật</a></li>
+            <li><a href="#">Sống khỏe</a></li>
+            <li><a href="#">Pháp luật</a></li>
+        </ul>
+    </li>
+      <li>
+        <a href="#">Thế giới</a>
+        <ul class="menu2">
+          <li><a href="#">Thư viện pháp luật</a></li>
+          <li><a href="#">Sống khỏe</a></li>
+          <li><a href="#">Pháp luật</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Nhịp sống trẻ</a>
+        <ul class="menu2">
+            <li><a href="#">Thư viện pháp luật</a></li>
+            <li><a href="#">Sống khỏe</a></li>
+            <li><a href="#">Pháp luật</a></li>
+        </ul>
+    </li>
+      <li>
+        <a href="#">Giáo dục</a>
+        <ul class="menu2">
+            <li><a href="#">Thư viện pháp luật</a></li>
+            <li><a href="#">Sống khỏe</a></li>
+            <li><a href="#">Pháp luật</a></li>
+        </ul>
+    </li>
+      <li>
+        <a href="#">Kinh tế</a>
+        <ul class="menu2">
+            <li><a href="#">Thư viện pháp luật</a></li>
+            <li><a href="#">Sống khỏe</a></li>
+            <li><a href="#">Pháp luật</a></li>
+        </ul>
+    </li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .menu1 {
+      width: 200px;
+      background-color: green;
+      list-style: none;
+      padding: 0px;
+    }
+    .menu1 > li {
+      padding: 10px 5px;
+      border-top: 1px solid white;
+      position: relative;
+    }
+    .menu1 > li:hover {
+      background-color: red;
+    }
+    .menu1 > li > a {
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+    }
+    .menu2 {
+      position: absolute;
+      left: 100%;
+      top: 0%;
+      background-color: green;
+      margin-left: 3px;
+      padding: 0px;
+      list-style: none;
+      display: none;
+    }
+    .menu2 > li {
+      padding: 10px 5px;
+      width: 200px;
+      border-bottom: 1px solid white;
+    }
+    .menu2 > li > a {
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+    }
+    .menu1 > li:hover > .menu2 {
+      display: block;
+    }
+    .menu2 > li:hover {
+      background-color: red;
+    }
+  </style>
+  <body>
+    <ul class="menu1">
+      <li>
+        <a href="#">Trang chủ</a>
+        <ul class="menu2">
+          <li><a href="#">WordPress</a></li>
+          <li><a href="#">SEO</a></li>
+          <li><a href="#">Hosting</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Tin tức</a>
+        <ul class="menu2">
+          <li><a href="#">WordPress</a></li>
+          <li><a href="#">SEO</a></li>
+          <li><a href="#">Hosting</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Sản phẩm</a>
+        <ul class="menu2">
+          <li><a href="#">WordPress</a></li>
+          <li><a href="#">SEO</a></li>
+          <li><a href="#">Hosting</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Liên hệ</a>
+        <ul class="menu2">
+          <li><a href="#">WordPress</a></li>
+          <li><a href="#">SEO</a></li>
+          <li><a href="#">Hosting</a></li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

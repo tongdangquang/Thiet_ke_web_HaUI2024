@@ -1,0 +1,391 @@
+body{
+    background-color: #212127;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    padding: 0px auto;
+    margin-top: 20px;
+}
+header p{
+    color: white;
+    margin: 0px;
+}
+header p > i{
+    margin-right: 10px;
+}
+header > img{
+    padding: 0px;
+    margin: 0px;
+}
+header input{
+    padding: 9px;
+    border: 1px solid white;
+    width: 80%;
+    height: 100%;
+    outline: none;
+}
+header .input{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: 40px;
+    background-color: white;
+    width: 30%;
+    padding: 1px 0px 1px 10px;
+}
+header .input > i{
+    padding: 0px;
+    text-align: left;
+    margin: 0px;
+}
+header input:hover{
+    border: none;
+}
+
+header p input{
+    width: 8px;
+    padding: 7px 10px;
+    color: white;
+    margin-left: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: rgb(15, 75, 162);
+}
+.phim_yeu_thich{
+    background-image: linear-gradient(to right, rgba(5, 42, 70, 0.5), rgba(22, 75, 118, 0.5));
+    padding: 10px 15px;
+    border-radius: 40px;
+    white-space: nowrap;
+}
+.phim_yeu_thich:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgba(5, 42, 70, 1), rgba(22, 75, 118, 1));
+}
+
+.nav_laptop{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin: 20px 0px 0px 0px;
+    padding: 0px;
+}
+.menu1{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: start;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+}
+.menu1 > li{
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+}
+.menu1 a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial;
+}
+.menu1 > li:hover > a{
+    color: orangered;
+    cursor: pointer;
+}
+.menu1 > li:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+
+.introduce img{
+    width: 60px;
+    height: 60px;
+}
+.introduce > div:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 40px;
+}
+.introduce > div:first-child > a{
+    font-size: 20px;
+}
+.introduce > div:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 5px;
+}
+.introduce > div:last-child > a{
+    background-color: white;
+    padding: 3px 5px;
+    border-radius: 10px;
+    color: black;
+}
+.introduce{
+    background-image: url(avt2.png);
+    background-size: contain;
+    margin: 0px 15px;
+}
+section{
+    margin: 20px 10%;
+    padding: 0px;
+    border: 1px solid black;
+    background-color: #1a1a20;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+h2{
+    color: orangered;
+    margin: 20px 15px;
+    font-size: 16px;
+    text-decoration: underline;
+    font-family: Arial;
+}
+
+.left{
+    width: 75%;
+}
+.introduce a{
+    color: red;
+    text-decoration: none;
+    font-size: 16px;
+}
+.introduce img{
+    border: 1px solid white;
+    margin-right: 10px;
+}
+
+.one_film{
+    background-image: url(anh_phim.jpg);
+    background-size: contain;
+    width: 180px;
+    height: 270px;
+    border-radius: 10px;
+    position: relative;
+    margin: 10px;
+}
+.one_film > p{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    color: white;
+    margin: 10px 5px;
+    padding: 0px;
+}
+.one_film:hover > p{
+    color: orangered;
+}
+.one_film input{
+    margin: 10px 5px;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 255, 0.7), rgba(255, 0, 0, 0.7));
+}
+.one_film:hover input{
+    background-image: linear-gradient(to right, rgba(0, 0, 255, 1), rgba(255, 0, 0, 1));
+}
+.one_film:hover{
+    transform: scale(1.05);
+}
+
+.all_film{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.mini_film img{
+    width: 80px;
+    height: 120px;
+}
+.mini_film p{
+    color: white;
+    margin: 10px;
+    font-family: Arial;
+    font-size: 15px;
+    text-decoration: none;
+}
+.mini_film{
+    display: flex;
+    align-items: start;
+    background-image: linear-gradient(to right, rgba(53, 65, 110, 0.4), rgba(94, 89, 132, 0.4));
+    margin: 15px;
+    width: 90%;
+    text-decoration: none;
+}
+.mini_film:hover{
+    background-image: linear-gradient(to right, rgb(105, 105, 103, 1), rgb(105, 105, 103, 1));
+}
+.mini_film:hover p{
+    color: orangered;
+}
+.mini_film:hover img{
+    transform: scale(1.05);
+}
+
+footer{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 165px;
+    margin: 15px 0px;
+    background-color: #1a1a20;
+}
+
+.content{
+    display: flex;
+    align-items: start;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.return_header i{
+    color: white;
+    position: fixed;
+    bottom: 10%;
+    right: 4%;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.nav_mobile, .header_mobile{
+    display: none;
+}
+
+
+/* Thiết lập các kiểu cho điện thoại */
+@media only screen and (max-width: 600px) {
+    #header{
+        display: none;
+    }
+    .header_mobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        background-color: black;
+        padding: 0px;
+        margin: 0px;
+        height: 130px;
+        width: 100%;
+    }
+    .header_mobile img{
+        width: 100%;
+        height: 90%;
+    }
+    
+    .nav_mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-image: linear-gradient(to right, rgba(53, 65, 110, 0.4), rgba(94, 89, 132, 0.4));
+        position: relative;
+    }
+    .nav_mobile div{
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0px 10px;
+    }
+    .nav_mobile > i{
+        margin: 0px 10px;
+    }
+    .nav_mobile i{
+        color: white;
+        font-size: 14px;
+        padding: 15px 15px;
+        margin: 0px;
+        cursor: pointer;
+    }
+    .nav_mobile i input{
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        right: 0%;
+        padding: 10px;
+        display: none;
+        z-index: 1;
+    }
+    .nav_mobile i:hover input{
+        display: block;
+        z-index: 1;
+    }
+    .nav_mobile i:hover{
+        color: orangered;
+    }
+    .menu1{
+        display: block;
+        background-image: linear-gradient(to right, rgba(53, 65, 110, 0.4), rgba(94, 89, 132, 0.4));
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        right: 0%;
+        margin: 0px;
+        padding: 0px;
+        display: none;
+    }
+    .menu1 > li{
+        padding: 7px 10px;
+    }
+    .menu1 > li > a{
+        font-weight: normal;
+    }
+    .nav_mobile i:hover .menu1{
+        display: block;
+    }
+
+    section{
+        display: block;
+        width: 100%;
+        margin: 20px auto;
+    }
+    .left{
+        width: 100%;
+        padding: 0px;
+    }
+
+    .one_film{
+        width: 184px;
+        height: 275px;
+        margin: 10px 0px;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    
+}
+
+  
+
+/* Thiết lập các kiểu cho máy tính bảng */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    header img{
+        width: 250px;
+        padding: 20px 0px;
+        margin: 0px;
+    }
+    header input{
+        width: 60%;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Ngày tháng năm sinh: </label>
+        <label for="">ngày</label>
+        <select name="day" id="day"></select>
+        <label for="">tháng</label>
+        <select name="month" id="month"></select>
+        <label for="">năm</label>
+        <select name="year" id="year"></select>
+    </form>
+    <script>
+        function date()
+        {
+            var d = document.getElementById("day");
+            for (var i = 1; i <= 31; i++)
+            {
+                var option = document.createElement("option");
+                option.text = i;
+                option.value = i;
+                d.add(option);
+            }
+        }
+        function mon()
+        {
+            var m = document.getElementById("month");
+            for (var i = 1; i <= 12; i++)
+            {
+                var option = document.createElement("option");
+                option.text = i;
+                option.value = i;
+                m.add(option);
+            }
+        }
+        function ye()
+        {
+            var y = document.getElementById("year");
+            var y2 = new Date().getFullYear();
+            for (var i = y2; i >= y2 - 100; i--)
+            {
+                var option = document.createElement("option");
+                option.text = i;
+                option.value = i;
+                y.add(option);
+            }
+        }
+        date();
+        mon();
+        ye();
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function tong()
+        {
+            var a = parseInt(document.getElementById("number1").value);
+            var b = parseInt(document.getElementById("number2").value);
+            if(isNaN(a) || isNaN(b))
+            {
+                alert("Nhập 2 số tự nhiên.");
+                return;
+            }
+            var x = a + b;
+            document.getElementById("result").value = x;
+        }
+    </script>
+    <form name="tinh_tong">
+        <label for="number1"></label>
+        <input type="number" id="number1" required>
+        +
+        <label for="number2"></label>
+        <input type="number" id="number2" required>
+        <input type="button" value="=" onclick="tong()">
+        <label for="result"></label>
+        <input type="text" id="result" readonly>
+    </form>
+</body>
+</html>

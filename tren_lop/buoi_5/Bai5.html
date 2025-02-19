@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Nhập n: </label>
+        <input type="text" name="" id="number">
+        <input type="button" value="Tính S" onclick="tinh_S()">
+        <input type="button" value="Tính F" onclick="tinh_F()">
+    </form>
+    <div id="S"></div>
+    <div id="F"></div>
+    <script>
+        function tinh_S()
+        {
+            var n = parseInt(document.getElementById("number").value);
+            if(isNaN(n))
+            {
+                alert("Nhập một số tự nhiên.");
+                return;
+            }
+            var tong = 0;
+            for (var i = 1; i <= n; i++)
+            {
+                tong += 1/i;
+            }
+            document.getElementById("S").innerHTML = "S = " + tong;
+        }
+        function tinh_F()
+        {
+            var n = parseInt(document.getElementById("number").value);
+            if(isNaN(n))
+            {
+                alert("Nhập một số tự nhiên.");
+                return;
+            }
+            if(n % 2 == 0)
+            {
+                var tong = 1;
+                var p = 1;
+                for (var i = 1; i <= n; i++)
+                {
+                    p *= 2;
+                    tong += 1/p;
+                }
+                document.getElementById("F").innerHTML = "F = " + tong;
+            }
+            else
+            {
+                document.getElementById("F").innerHTML = "F = " + Math.sqrt(n*n + 1);
+            }
+        }
+    </script>
+</body>
+</html>

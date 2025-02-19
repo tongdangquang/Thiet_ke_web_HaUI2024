@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0099ff;
+    }
+    header select{
+        background-color: gray;
+        color: white;
+    }
+    header select:hover{
+        color: #ff3300;
+    }
+    header > div{
+        border: 1px solid white;
+        padding: 8px 15px;
+        border-radius: 5px;
+    }
+
+    nav{
+        margin: 10px 0px;
+    }
+    .menu1{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin: 0px;
+        padding: 0px;
+        background-color: #0099ff;
+        list-style: none;
+    }
+    .menu1 > li{
+        padding: 15px 20px;
+        margin: 0px;
+        position: relative;
+    }
+    .menu1 a{
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+    }
+    .menu1 > li > a:hover{
+        color: #ffff33;
+    }
+    .menu2{
+        position: absolute;
+        padding: 0px;
+        margin: 0px;
+        top: 100%;
+        left: 0%;
+        list-style: none;
+        background-color: white;
+        border: 1px solid black;
+        display: none;
+    }
+    .menu2 > li{
+        margin: 15px 30px;
+    }
+    .menu2 > li > a{
+        color: black;
+        white-space: nowrap;
+    }
+    .menu1 > li:hover > .menu2{
+        display: block;
+    }
+
+    section > h1{
+        color: white;
+        background-color: #0099ff;
+        font-size: 18px;
+        padding: 5px;
+    }
+    .sapxep{
+        padding: 10px 10px;
+        margin: 10px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid black;
+    }
+
+    .sapxep select:first-child{
+        padding-right: 150px;
+        margin-right: 30px;
+    }
+    .ct1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 10px;
+    }
+
+    .ct1 img{
+        width: 150px;
+        height: 150px;
+    }
+    .ct1 > div{
+        width: 300px;
+        border: 1px solid black;
+        text-align: center;
+        padding: 10px 10px 30px 10px;
+    }
+
+    .ct1 p:hover{
+        color: #009933;
+    }
+</style>
+<body>
+    <header>
+        <img src="anh.png" alt="" style="width: 150px; height: 60px; margin: 10px 20px;">
+        <form action="">
+            <select name="" id="">
+                <option value="">Business Areas</option>
+                <option value="">Business Areas</option>
+                <option value="">Business Areas</option>
+            </select>
+        </form>
+        <div><img src="anh.png" alt="" style="width: 20px; height: 17px;"> Viet Nam</div>
+        <form action="">
+            <input type="text" name="" id="" placeholder="Tìm kiếm" style="margin-right: 20px; padding: 10px;">
+        </form>
+    </header>
+
+    <nav>
+        <ul class="menu1">
+            <li><a href="#">SƠN DULUX</a></li>
+            <li><a href="#">GIỚI THIỆU</a></li>
+            <li>
+                <a href="#">SẢN PHẨM</a>
+                <ul class="menu2">
+                    <li><a href="#">Sơn Dulux</a></li>
+                    <li><a href="#">Sơn Maxilite</a></li>
+                    <li><a href="#">Sơn Jotun</a></li>
+                    <li><a href="#">Swon Epoxy</a></li>
+                    <li><a href="#">Chống thấm</a></li>
+                    <li><a href="#">Dịch vụ Diệt mối</a></li>
+                    <li><a href="#">Sơn và Chống thấm BK</a></li>
+                    <li><a href="#">Sơn Kết cấu thép</a></li>
+                </ul>
+            </li>
+            <li><a href="#">SƠN EPOXY</a></li>
+            <li><a href="#">TIN TỨC</a></li>
+            <li><a href="#">LIÊN HỆ</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h1>CHỐNG THẤM</h1>
+        <div class="sapxep">
+            <div>
+                Sắp xếp theo 
+                <select name="" id="">
+                    <option value="">Mặc định</option>
+                    <option value="">Chất lượng</option>
+                    <option value="">Giá thành</option>
+                </select>
+                Hiển thị
+                <select name="" id="">
+                    <option value="">36</option>
+                    <option value="">37</option>
+                    <option value="">38</option>
+                </select>
+                mỗi trang
+            </div>
+            <div>
+                <a href="#" style="color: black; text-decoration: none;">Xem</a>
+                <img src="anh.png" alt="" style="width: 30px; height: 20px;">
+            </div>
+        </div>
+
+        <div class="ct1">
+            <div>
+                <img src="anh.png" alt="">
+                <p style="font-size: 16px; font-weight: bold;">SƠN POLYURETHAN CHỐNG THẤM NEOMAX</p>
+                <a href="#" style="color: red; text-decoration: none; font-size: 16px; font-weight: bold;">Vui lòng gọi</a>
+            </div>
+            <div>
+                <img src="anh.png" alt="">
+                <p style="font-size: 16px; font-weight: bold;">SƠN POLYURETHAN CHỐNG THẤM NEOMAX</p>
+                <a href="#" style="color: red; text-decoration: none; font-size: 16px; font-weight: bold;">Vui lòng gọi</a>
+            </div>
+            <div>
+                <img src="anh.png" alt="">
+                <p style="font-size: 16px; font-weight: bold;">SƠN POLYURETHAN CHỐNG THẤM NEOMAX</p>
+                <a href="#" style="color: red; text-decoration: none; font-size: 16px; font-weight: bold;">Vui lòng gọi</a>
+            </div>
+            <div>
+                <img src="anh.png" alt="">
+                <p style="font-size: 16px; font-weight: bold;">SƠN POLYURETHAN CHỐNG THẤM NEOMAX</p>
+                <a href="#" style="color: red; text-decoration: none; font-size: 16px; font-weight: bold;">Vui lòng gọi</a>
+            </div>
+        </div>
+        <div class="ct1">
+            <div>
+                <img src="anh.png" alt="">
+                <p style="font-size: 16px; font-weight: bold;">SƠN POLYURETHAN CHỐNG THẤM NEOMAX</p>
+                <a href="#" style="color: red; text-decoration: none; font-size: 16px; font-weight: bold;">Vui lòng gọi</a>
+            </div>
+            <div>
+                <img src="anh.png" alt="">
+                <p style="font-size: 16px; font-weight: bold;">SƠN POLYURETHAN CHỐNG THẤM NEOMAX</p>
+                <a href="#" style="color: red; text-decoration: none; font-size: 16px; font-weight: bold;">Vui lòng gọi</a>
+            </div>
+            <div>
+                <img src="anh.png" alt="">
+                <p style="font-size: 16px; font-weight: bold;">SƠN POLYURETHAN CHỐNG THẤM NEOMAX</p>
+                <a href="#" style="color: red; text-decoration: none; font-size: 16px; font-weight: bold;">Vui lòng gọi</a>
+            </div>
+            <div>
+                <img src="anh.png" alt="">
+                <p style="font-size: 16px; font-weight: bold;">SƠN POLYURETHAN CHỐNG THẤM NEOMAX</p>
+                <a href="#" style="color: red; text-decoration: none; font-size: 16px; font-weight: bold;">Vui lòng gọi</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

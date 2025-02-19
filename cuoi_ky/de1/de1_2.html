@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: white;
+    }
+    table{
+        font-weight: bold;
+    }
+</style>
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td>Tiêu đề: </td>
+                <td><input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>Người nhận: </td>
+                <td><input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>File đính kèm: </td>
+                <td><input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>Ngôn ngữ: </td>
+                <td>
+                    <input type="checkbox" name="" id="">Python
+                    <input type="checkbox" name="" id="">Javascript
+                    <input type="checkbox" name="" id="">C++
+                    <input type="checkbox" name="" id="">Other
+                </td>
+            </tr>
+            <tr>
+                <td>Nội dung: </td>
+                <td><textarea name="" id="content" cols="30" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Gửi đi" onclick=" return check()">
+                    <input type="reset" value="Hủy bỏ" onclick="reset_form()">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function check()
+        {
+            var ip = document.getElementsByTagName("input");
+            var td = ip[0].value;
+            var nn = ip[1].value;
+            var fdk = ip[2].value;
+            var ct = document.getElementById("content").value;
+            if(td == "" || nn == "" || fdk == "" || ct == "")
+            {
+                alert("Vui lòng nhập đầy đủ thông tin!");
+                return false;
+            }
+
+            var regex = /^[A-Za-z:/-]+$/;
+            if(!regex.test(fdk))
+            {
+                alert("File đính kèm chỉ được phép nhập các ký tự từ A-Z, a-z và các ký tự đặc biệt bao gồm dấu hai chấm \":\", dấu \"/\" và dấu trừ \"-\"");
+                return false;
+            }
+
+            var py = ip[3].checked;
+            var js = ip[4].checked;
+            var cpp = ip[5].checked;
+            var other = ip[6].checked;
+            if(!py && !js && !cpp && !other)
+            {
+                alert("Vui lòng chọn ít nhất một ngôn ngữ!");
+                return false;
+            }
+            var cf = confirm("Bạn chắc chắn muốn gửi thông tin chưa?");
+            if(cf)
+            {
+                alert("Thông tin đã được gửi thành công!");
+            }
+            else
+            {
+                return false;
+            }
+            return true;
+        }
+        function reset_form()
+        {
+            document.getElementsByTagName("form")[0].reset();
+        }
+    </script>
+</body>
+</html>

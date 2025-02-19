@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        Nhập tên của bạn: <input type="text" name="" id="your_name">
+        <input type="button" value="OK" onclick="hello()">
+    </form>
+    <div id="demo"></div>
+    <script>
+        function hello()
+        {
+            var ten = document.getElementById("your_name").value;
+            var chao = "Chào mừng bạn " + ten + " đã đến với website của chúng tôi.";
+            document.getElementById("demo").innerHTML = chao;
+        }
+    </script>
+</body>
+</html>

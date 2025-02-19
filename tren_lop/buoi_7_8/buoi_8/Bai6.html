@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <table border="1px" cellsapcing="0" align="center" width="400px">
+            <tr>
+                <td colspan="2" align="center">Tách ID</td>
+            </tr>
+            <tr>
+                <td>Nhập Email</td>
+                <td><input type="text" name="" id="source_str" size="40"></td>
+            </tr>
+            <tr>
+                <td>ID</td>
+                <td><input type="text" name="" id="result" size="40" readonly></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="reset" value="Xóa" id="" onclick="reset_form()">
+                    <input type="button" value="Tách" id="" onclick="chuan_hoa()">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function reset_form()
+        {
+            document.getElementsByTagName("form")[0].reset();
+        }
+        function chuan_hoa()
+        {
+            var str = document.getElementById("source_str").value;
+            var index = str.indexOf("@");
+            document.getElementById("result").value = str.slice(0, index);
+        }
+    </script>
+</body>
+</html>

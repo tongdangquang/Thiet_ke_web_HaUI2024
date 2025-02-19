@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+</head>
+<style>
+    fieldset
+    {
+        display: inline-block;
+        align-items: center;
+        margin-bottom: 4px;
+    }
+    caption
+    {
+        text-align: center;
+    }
+    input[type="password"]
+    {
+        margin-left: 34px;
+        margin-bottom: 4px;
+        margin-top: 4px;
+    }
+    input[type="reset"], input[type="submit"]
+    {
+        text-align: center;
+        margin: 0 25px;
+    }
+</style>
+<body>
+    <form action="helloworld.html" method="get" autucomple="">
+        <fieldset>
+            <caption>ĐĂNG NHẬP DIỄN ĐÀN</caption> <br>
+            <label for="Ten_Dang_Nhap">Tên đăng nhập: </label>
+            <input type="text" name="Ten_Dang_Nhap" id="Ten_Dang_Nhap" placeholder="Nhập tên của bạn" autofocus="">
+            <br>
+            <label for="Mat_khau">Mật khẩu:</label>
+            <input type="password" name="Mat_khau" id="Mat_khau" placeholder="Nhập mật khẩu"> <br>
+
+            <input type="submit" value="Đăng nhập">
+            <input type="reset" value="Phục hồi">
+        </fieldset>
+    </form>
+</body>
+</html>

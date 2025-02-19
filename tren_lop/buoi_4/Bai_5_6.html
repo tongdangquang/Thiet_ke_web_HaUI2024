@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .menu1 {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      white-space: nowrap;
+      background-color: green;
+      padding: 0px;
+      list-style: none;
+    }
+    .menu1 > li {
+      padding: 10px 40px;
+      border-right: 1px solid white;
+      position: relative;
+    }
+    .menu1 > li > a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+    }
+    .menu1 > li:hover {
+      background-color: grey;
+    }
+    .menu1 > li:hover > a {
+      color: black;
+    }
+
+    .menu2 {
+      position: absolute;
+      top: 100%;
+      left: 0%;
+      right: 0%;
+      list-style: none;
+      background-color: green;
+      margin-top: 1px;
+      padding: 0px;
+      display: none;
+    }
+    .menu2 > li {
+      padding: 10px 40px;
+      border-bottom: 1px solid white;
+    }
+    .menu2 > li > a {
+      text-decoration: none;
+      font-size: 16px;
+      color: white;
+    }
+    .menu1 > li:hover > .menu2 {
+      display: block;
+    }
+    .menu2 > li:hover {
+      background-color: grey;
+    }
+    .menu2 > li:hover > a {
+      color: black;
+    }
+  </style>
+  <body>
+    <ul class="menu1">
+      <li>
+        <a href="#">Trang chủ</a>
+        <ul class="menu2">
+          <li><a href="#">WordPress</a></li>
+          <li><a href="#">SEO</a></li>
+          <li><a href="#">Hosting</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Diễn đàn</a>
+        <ul class="menu2">
+          <li><a href="#">WordPress</a></li>
+          <li><a href="#">SEO</a></li>
+          <li><a href="#">Hosting</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Tin tức</a>
+        <ul class="menu2">
+          <li><a href="#">WordPress</a></li>
+          <li><a href="#">SEO</a></li>
+          <li><a href="#">Hosting</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Sản phẩm</a>
+        <ul class="menu2">
+          <li><a href="#">WordPress</a></li>
+          <li><a href="#">SEO</a></li>
+          <li><a href="#">Hosting</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Hỏi đáp</a>
+        <ul class="menu2">
+          <li><a href="#">WordPress</a></li>
+          <li><a href="#">SEO</a></li>
+          <li><a href="#">Hosting</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Liên hệ</a>
+        <ul class="menu2">
+          <li><a href="#">WordPress</a></li>
+          <li><a href="#">SEO</a></li>
+          <li><a href="#">Hosting</a></li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <table border="1px" cellspacing="0px" align="center" width="500px" height="100px">
+            <tr>
+                <td>Nhập mảng: </td>
+                <td><input type="text" name="" id="array_source" style="width: 300px;" placeholder="Cách thức nhập: 1, 2, 3, ..."></td>
+            </tr>
+            <tr>
+                <td>Giá trị xuất hiện nhiều nhất: </td>
+                <td><input type="text" name="" id="result" style="width: 300px;" readonly></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="reset" value="Xóa" id="delete" onclick="reset_form()">
+                    <input type="button" value="Tìm kiếm" id="sort" onclick="find_array()">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function find(m, n) 
+        {
+            const max = Math.max(...m);
+            const min = Math.min(...m);
+            const range = max - min + 1;
+            const a = new Array(range).fill(0);
+
+            for (let i = 0; i < n; i++) 
+            {
+                a[m[i] - min]++;
+            }
+            var number_max = Math.max(...a);
+            var index_max = min;
+            for (var i = 0; i < a.length; i++)
+            {
+                if(a[i] == number_max)
+                    index_max += i;
+            }
+            var char = String.fromCharCode(index_max);
+            document.getElementById("result").value = char + " (" + number_max + " times)";
+        }
+
+        function find_array()
+        {
+            var str = document.getElementById("array_source").value;
+            var str1 = str.replace(/[, ]/g, '');
+            var m = [];
+            for (var i = 0; i < str1.length; i++)
+            {
+                m.push(str1.charCodeAt(i));
+            }
+            find(m, m.length);
+        }
+
+        function reset_form()
+        {
+            document.getElementsByTagName("form")[0].reset();
+        }
+    </script>
+</body>
+</html>

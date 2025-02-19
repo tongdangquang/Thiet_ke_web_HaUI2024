@@ -1,0 +1,68 @@
+/* Cách 1. Element selector (tag name): Sử dụng tên của thẻ html để xác định thẻ được ddingj dạng thuộc tính */
+caption
+{
+    color: green;
+}
+thead
+{
+    color: brown;
+}
+
+/* Cách 2. id selector: sử dụng id của thẻ html để lựa chọn thẻ được định dạng thuộc tính (id nên là duy nhất) */
+#tieu_de1
+{
+    color: blueviolet;
+}
+#tieu_de2
+{
+    color: aqua;
+}
+
+/* Cách 3. class selector: sử dụng thuộc tính class của các thành phần trong tài liệu html để lựa chọn cho các thành phần đó */
+.data1
+{
+    color: blue;
+}
+.data2
+{
+    color: red;
+}
+
+/* Cách 3. universal selector (*): khi muốn áp dụng thuộc tính với tất cả thành phần trong tài liệu html */
+*
+{
+    font-weight: bold;
+}
+
+/* Cách 4. descendant selector: sử dụng khi muốn áp dụng thuộc tính định dạng với tất cả các thành phần là con (hậu duệ) trực tiếp của một thành phần khác */
+thead th
+{
+    color: yellowgreen;
+}
+
+.data1 .data_name_2
+{
+    color: aquamarine;
+}
+
+/* Cách 5. child selector: sử dụng khi muốn áp dụng thuộc tính định dạng với 1 hoặc nhiều thành phần là con (hậu duệ) cùng dạng trực tiếp của một thành phần khác */
+.data1 > #data_name_1
+{
+    color: black;
+}
+
+.data1 > .data_name_2{
+    color: black;
+}
+
+/* Cách 6. viết selector dựa vào thuộc tính của các phần tử */
+td[align="center"]
+{
+    color: black;
+}
+
+/* Cách 7. group selectors: nhóm nhiều selectors lại và cho chúng cùng 1 định dạng */
+h1, h2, h3
+{
+    color: red;
+}

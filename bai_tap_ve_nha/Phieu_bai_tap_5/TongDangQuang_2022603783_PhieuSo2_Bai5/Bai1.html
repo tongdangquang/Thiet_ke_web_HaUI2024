@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function ptb2(a, b, c) {
+        if (a == 0) {
+          return "Phương trình không phải phương tình bậc 2.";
+        }
+        var delta = b * b - 4 * a * c;
+        if (delta > 0) {
+          var x1 = (-b + Math.sqrt(delta)) / (2 * a);
+          var x2 = (-b - Math.sqrt(delta)) / (2 * a);
+          return "Tập nghiệm của phương trình là: S = {" + x1 + ", " + x2 + "}";
+        } else if (delta == 0) {
+          var x = -b / (2 * a);
+          return "Tập nghiệm của phương trình là: S = {" + x + "}";
+        } else {
+          return "Phương trình vô nghiệm.";
+        }
+      }
+      var a = 4,
+        b = 6,
+        c = 2;
+      document.write("Phương trình bậc 2: " + a + "x2 + " + b + "x + " + c + " = 0 <br>");
+      document.write(ptb2(a, b, c));
+    </script>
+  </body>
+</html>

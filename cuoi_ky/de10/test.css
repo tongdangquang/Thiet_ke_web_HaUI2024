@@ -1,0 +1,149 @@
+header{
+    background-image: url("anh.png");
+    text-align: center;
+}
+header > p:first-child{
+    font-size: 30px;
+    font-weight: bold;
+    color: #0033cc;
+    padding-top: 20px;
+    margin-left: 500px;
+}
+header > p:last-child{
+    font-size: 20px;
+    color: black;
+    padding-bottom: 20px;
+    margin-left: 500px;
+}
+
+nav{
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #33ccff;
+}
+nav > input{
+    padding: 8px 100px 8px 0px;
+    margin-right: 20px;
+}
+.menu1{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    list-style: none;
+}
+.menu1 > li{
+    padding: 15px 50px;
+    margin: 0px;
+    text-align: center;
+    border-right: 1px solid black;
+}
+.menu1 > li > a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.menu1 > li:hover > a{
+    color: yellow;
+}
+.left{
+    width: 20%;
+}
+.left > p{
+    color: white;
+    background-color: #0066ff;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+}
+.menu2{
+    margin: 0px;
+    padding: 0px;
+    background-color: #33ffff;
+    list-style: none;
+}
+.menu2 > li{
+    padding: 15px;
+    color: white;
+    font-size: 18px;
+    border-bottom: 1px solid white;
+    position: relative;
+}
+.menu2 > li:hover{
+    color: yellow;
+}
+.menu3{
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    white-space: nowrap;
+    list-style: none;
+    background-color: #33ffff;
+    display: none;
+}
+.menu3 > li{
+    padding: 15px;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+}
+.menu3 > li > a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+.menu3 > li:hover > a{
+    color: yellow;
+}
+.menu2 > li:hover > .menu3{
+    display: block;
+}
+
+section{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.right{
+    width: 80%;
+    margin-left: 10px;
+}
+.title > p{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #33ccff;
+    width: 300px;
+    color: white;
+}
+.title{
+    border-bottom: 3px solid #33ccff;
+}
+.one_div{
+    text-align: center;
+    border: 1px solid black;
+    padding: 0px;
+    margin: 0px;
+}
+.one_div > img{
+    margin: 1px;
+}
+.one_div > p{
+    margin: 7px;
+}
+.one_div > p:hover{
+    color: red;
+}
+.four_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.right img:hover{
+    transform: scale(120%);
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="de2.css">
+    <title>Document</title>
+</head>
+<style>
+    header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    }
+    header p{
+        color: blue;
+        margin: 0px 30px;
+        padding: 0px;
+        text-align: center;
+        font-style: italic;
+    }
+    header > div > p:first-child{
+        font-size: 50px;
+    }
+    header > div > p:last-child{
+        font-size: 45px;
+    }
+    header img{
+        height: 100px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .menu1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: black;
+        height: 50px;
+        list-style: none;
+    }
+    .menu1 > li{
+        width: calc(20%);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        border-right: 1px solid white;
+        position: relative;
+    }
+    .menu1 > li:last-child{
+        border-right: none;
+    }
+    .menu1 > li > a{
+        color: white;
+        font-size: 16px;
+        font-family: Arial;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .menu1 > li:hover{
+        background-color: red;
+    }
+    .menu1 > li:hover > a{
+        color: yellow;
+    }
+
+    .menu2{
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        right: 0%;
+        background-color: black;
+        padding: 0px;
+        margin: 1px 0px 0px 0px;
+        display: none;
+    }
+    .menu2 > li{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid white;
+    }
+    .menu2 > li:last-child{
+        border-top: none;
+    }
+    .menu2 > li > a{
+        text-decoration: none;
+        color: white;
+    }
+    .menu1 > li:hover > .menu2{
+        display: block;
+    }
+    .menu2 > li:hover{
+        background-color: red;
+    }
+    .menu2 > li:hover > a{
+        color: yellow;
+    }
+</style>
+<body>
+    <header>
+        <img src="anh.png" alt="">
+        <div>
+            <p>ĐIỂM ĐẾN CỦA TẤT CẢ MỌI NGƯỜI</p>
+            <p>SANG TRỌNG - ĐẲNG CẤP - MÃI MÃI</p>
+        </div>
+        <img src="anh.png" alt="">
+    </header>
+
+    <nav>
+        <ul class="menu1">
+            <li><a href="#">TRANG CHỦ</a></li>
+            <li><a href="#">TOUR TRONG NƯỚC</a></li>
+            <li>
+                <a href="#">TOUR NƯỚC NGOÀI</a>
+                <ul class="menu2">
+                    <li><a href="#">MỸ</a></li>
+                    <li><a href="#">HÀ LAN</a></li>
+                    <li><a href="#">ÚC</a></li>
+                    <li><a href="#">BỈ</a></li>
+                </ul>
+            </li>
+            <li><a href="#">TOUR KHUYẾN MẠI</a></li>
+            <li><a href="#">KHÁCH SẠN</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

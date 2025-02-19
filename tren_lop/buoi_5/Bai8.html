@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Nhập năm:</label>
+        <input type="text" name="" id="year">
+        <br>
+        <input type="button" value="Chuyển đổi" onclick="chuyen_doi()">
+        <input type="text" id="result" readonly>
+    </form>
+    <script>
+        function chuyen_doi()
+        {
+            var x = parseInt(document.getElementById("year").value);
+            var can = x % 10;
+            var chi = x % 12;
+            var y1 = "";
+            var y2 = "";
+            if(x < 0 || x > 9999)
+            {
+                alert("Nhập lại năm.");
+            }
+            else
+            {
+                if(can == 0)
+                    y1 = "Canh";
+                else if(can == 1)
+                    y1 = "Tân";
+                else if(can == 2)
+                    y1 = "Nhâm";
+                else if(can == 3)
+                    y1 = "Quý";
+                else if(can == 4)
+                    y1 = "Giáp";
+                else if(can == 5)
+                    y1 = "Ất";
+                else if(can == 6)
+                    y1 = "Bính";
+                else if(can == 7)
+                    y1 = "Đinh";
+                else if(can == 8)
+                    y1 = "Mậu";
+                else if(can == 9)
+                    y1 = "kỉ";
+
+                if(chi == 0)
+                    y2 = "Thân";
+                if(chi == 1)
+                    y2 = "Dậu";
+                if(chi == 2)
+                    y2 = "Tuất";
+                if(chi == 3)
+                    y2 = "Hợi";
+                if(chi == 4)
+                    y2 = "Tý";
+                if(chi == 5)
+                    y2 = "Sửu";
+                if(chi == 6)
+                    y2 = "Dần";
+                if(chi == 7)
+                    y2 = "Mão";
+                if(chi == 8)
+                    y2 = "Thìn";
+                if(chi == 9)
+                    y2 = "Tỵ";
+                if(chi == 10)
+                    y2 = "Ngọ";
+                if(chi == 11)
+                    y2 = "Mùi";
+            }
+            document.getElementById("result").value = y1 + y2;
+        }
+    </script>
+</body>
+</html>

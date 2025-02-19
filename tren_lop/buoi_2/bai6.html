@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>HỒ SƠ NHÂN SỰ</h1>
+    <form action="#" method="get" autocapitalize="">
+        <table align="center" border="1px" cellspacing="2px">
+            <tr>
+                <td>
+                    <label for="don_vi">Tên đơn vị</label>
+                </td>
+                <td>
+                    <select name="don_vi" id="">
+                        <option value="CNTT">Công nghệ thông tin</option>
+                        <option value="ke_kiem">Kế kiểm</option>
+                        <option value="co_khi">Cơ khí</option>
+                        <option value="dien_tu">Điện tử</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ma_nhan_su">Mã nhân sự</label>
+                </td>
+                <td>
+                    <input type="text" name="ma_nhan_su" id="ma_nhan_su" placeholder="Nhập mã nhân sự">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ho_dem">Họ và đệm</label>
+                </td>
+                <td>
+                    <input type="text" name="ho_dem" id="ho_dem" placeholder="Nhập họ đệm">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ten">Tên</label>
+                </td>
+                <td>
+                    <input type="text" name="ten" id="ten" placeholder="Nhập tên">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gioi_tinh">Giới tính</label>
+                </td>
+                <td>
+                    <input type="radio" name="gioi_tinh" value="Nam">
+                    <label for="nam">Nam</label>
+                    <input type="radio" name="gioi_tinh" value="Nữ">
+                    <label for="nu">Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ngay_sinh">Ngày sinh</label>
+                </td>
+                <td>
+                    <input type="text" name="ngay_sinh" id="ngay_sinh" placeholder="Nhập ngày sinh">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="que_quan">Quê quán</label>
+                </td>
+                <td>
+                    <select name="que_quan" id="">
+                        <option value="thai_binh">Thái Bình</option>
+                        <option value="hai_phong">Hải Phòng</option>
+                        <option value="ha_noi">Hà Nội</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dia_chi">Địa chỉ</label>
+                </td>
+                <td>
+                    <input type="text" name="dia_chi" id="dia_chi" placeholder="Nhập địa chỉ">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ma_ngach">Mã ngạch</label>
+                </td>
+                <td>
+                    <select name="ma_ngach" id="">
+                        <option value="quan_ly">Quản lý</option>
+                        <option value="ke_toan">Kế toán</option>
+                        <option value="nhan_su">Nhân sự</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="bac">Bậc</label>
+                </td>
+                <td>
+                    <input type="text" name="bac" id="bac" placeholder="Nhập bậc">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="he_so_luong">Hệ số lương</label>
+                </td>
+                <td>
+                    <input type="number" name="he_so_luong" id="he_so_luong" placeholder="Nhập hệ số lương" step="0.01">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="thuong">Thưởng</label>
+                </td>
+                <td>
+                    <input type="number" name="thuong" id="thuong" placeholder="Nhập tiền thưởng">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phu_cap">Phụ cấp</label>
+                </td>
+                <td>
+                    <input type="number" name="phu_cap" id="phu_cap" placeholder="Nhập phụ cấp">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Chấp nhận" id="">
+                    <input type="reset" value="Hủy bỏ" id="">
+                    <input type="reset" value="Quay lại" id="">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

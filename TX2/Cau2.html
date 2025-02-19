@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        background-color: greenyellow;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <form action="">
+        <table border="1px" align="center" cellspacing="1">
+            <tr align="center">
+                <td colspan="2">Tính tổng dãy số</td>
+            </tr>
+            <tr>
+                <td>Nhập dãy số: </td>
+                <td><input type="text" name="" id="str_number" size="40" placeholder="Cách thức nhập: 1,2,3,..."></td>
+            </tr>
+            <tr>
+                <td>Tính tổng dãy số: </td>
+                <td><input type="text" name="" id="result" size="40" readonly></td>
+            </tr>
+            <tr align="center">
+                <td colspan="2">
+                    <input type="button" value="Tính tổng" onclick="caculator()">
+                    <input type="reset" value="Hủy" onclick="reset_form()">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function caculator()
+        {
+            var m = document.getElementById("str_number").value.split(",");
+            var tong = 0;
+            for (var i = 0; i < m.length; i++)
+            {
+                if(i % 2 != 0)
+                {
+                    tong += parseInt(m[i]);
+                }
+            }
+            document.getElementById("result").value = tong;
+        }
+        function reset_form()
+        {
+            document.getElementsByTagName("form")[0].reset();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header > div > div{
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    }
+    header > div:first-child{
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        background-color: blue;
+    }
+    header img{
+        width: 130px;
+        height: 130px;
+    }
+
+    .menu_h{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    .menu_h > li{
+        margin: 10px;
+    }
+    .menu_h > li > a{
+        text-decoration: none;
+        color: black;
+        font-family: Arial;
+        background-color: yellow;
+    }
+    header p{
+        font-size: 25px;
+        background-color: yellow;
+        margin: 0px 10px;
+    }
+    header > div:last-child{
+        background-color: green;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    section{
+        padding: 0px;
+        margin: 10px 0px;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        background-color: white;
+    }
+    .ds1{
+        width: 20%;
+    }
+    .menu1{
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        background-color: green;
+    }
+    .menu1 > li{
+        padding: 15px 10px;
+        border-bottom: 1px solid black;
+        position: relative;
+    }
+    .menu1 a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-family: Arial;
+        font-size: 16px;
+    }
+    .menu1 > li:hover{
+        background-color: greenyellow;
+    }
+
+    .menu2{
+        position: absolute;
+        top: 0%;
+        left: 100%;
+        width: 100%;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        white-space: nowrap;
+        background-color: green;
+        border-left: 1px solid white;
+        display: none;
+    }
+    .menu2 > li{
+        padding: 15px 10px;
+        border-bottom: 1px solid black;
+    }
+    .menu2 > li:hover{
+        background-color: greenyellow;
+    }
+    .menu1 > li:hover > .menu2{
+        display: block;
+    }
+
+    .ds2{
+        width: 80%;
+    }
+    .one_block{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding: 0px;
+        margin: 0px;
+    }
+    .two_block{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px;
+        margin: 0px 80px 20px 80px;
+    }
+
+    .three_block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 80px;
+    }
+
+    section > .ds1, .ds2 a{
+        text-decoration: none;
+        font-size: 14px;
+        font-family: Arial;
+        color: blue;
+    }
+</style>
+<body>
+    <header>
+        <div>
+            <div>
+                <img src="anh.png" alt="">
+                <p>SIÊU THỊ DÀNH CHO NGƯỜI TIÊU DÙNG THÔNG THÁI</p>
+            </div>
+            <img src="anh.png" alt="">
+        </div>
+        <div>
+            <ul class="menu_h">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Đào tạo</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+            </ul>
+            <input type="text" name="" id="" style="margin: 0px 20px;">
+        </div>
+    </header>
+
+    <section>
+        <div class="ds1">
+            <ul class="menu1">
+                <li><a href="#">Trang chủ</a></li>
+                <li>
+                    <a href="#">Sản phẩm mới</a>
+                    <ul class="menu2">
+                        <li><a href="#">Quần áo nam</a></li>
+                        <li><a href="#">Quần áo nữ</a></li>
+                        <li><a href="#">Quần áo trẻ em</a></li>
+                        <li><a href="#">Quần áo sinh viên</a></li>
+                        <li><a href="#">Quần áo thời trang</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Hỗ trợ khách hàng</a></li>
+                <li><a href="#">Đồ gia dụng</a></li>
+                <li><a href="#">Đồ trẻ em</a></li>
+            </ul>
+        </div>
+
+        <div class="ds2">
+            <div class="two_block">
+                <div class="one_block">
+                    <img src="anh.png" alt="" style="width: 100px; height: 100px;">
+                    <a href="#">Máy làm kem <br>
+                        Giá: 1500000 đ</a>
+                </div>
+                <div class="one_block">
+                    <img src="anh.png" alt="" style="width: 100px; height: 100px;">
+                    <a href="#">Bộ nồi inox <br>
+                        Giá: 2000000 đ</a>
+                </div>
+            </div>
+            <div class="two_block">
+                <div class="one_block">
+                    <img src="anh.png" alt="" style="width: 100px; height: 100px;">
+                    <a href="#">Bộ đựng thiết bị gia đình<br>
+                        Giá: 800000 đ</a>
+                </div>
+                <div class="one_block">
+                    <img src="anh.png" alt="" style="width: 100px; height: 100px;">
+                    <a href="#">Máy xay sinh tố <br>
+                        Giá: 1800000 đ</a>
+                </div>
+            </div>
+            <div class="two_block">
+                <div class="one_block">
+                    <img src="anh.png" alt="" style="width: 100px; height: 100px;">
+                    <a href="#">Máy xay sinh tố <br>
+                        Giá: 1800000 đ</a>
+                </div>
+                <div class="one_block">
+                    <img src="anh.png" alt="" style="width: 100px; height: 100px;">
+                    <a href="#">Máy xay sinh tố <br>
+                        Giá: 1800000 đ</a>
+                </div>
+            </div>
+            <div class="three_block">
+                <div class="one_block">
+                    <img src="anh.png" alt="" style="width: 100px; height: 100px;">
+                    <a href="#">Bộ đồ gia dụng <br>
+                        Giá: 800000 đ</a>
+                </div>
+                <div class="one_block">
+                    <img src="anh.png" alt="" style="width: 100px; height: 100px;">
+                    <a href="#">Bộ đồ gia dụng <br>
+                        Giá: 800000 đ</a>
+                </div>
+                <div class="one_block">
+                    <img src="anh.png" alt="" style="width: 100px; height: 100px;">
+                    <a href="#">Bộ đồ gia dụng <br>
+                        Giá: 800000 đ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

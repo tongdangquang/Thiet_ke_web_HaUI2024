@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    header {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+    }
+
+    header > div > img {
+      width: 100%;
+    }
+    header > div > p {
+      font-style: italic;
+    }
+    header > div {
+      width: 25%;
+      margin-top: 0px;
+    }
+    header > img {
+      height: 130px;
+      width: 60%;
+    }
+
+    .menu1 {
+      display: flex;
+      list-style: none;
+      background-color: green;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px;
+    }
+    .menu1 > li {
+      text-align: center;
+      width: 12.5%;
+      white-space: nowrap;
+      padding: 15px 30px;
+      border-right: 1px solid black;
+      position: relative;
+    }
+    .menu1 > li > a {
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+    }
+    .menu1 > li:hover {
+      background-color: grey;
+    }
+
+    .menu2 {
+      position: absolute;
+      top: 100%;
+      left: 0%;
+      list-style: none;
+      background: white;
+      display: none;
+    }
+    .menu2 > li {
+      text-align: left;
+      padding: 10px;
+    }
+    .menu2 > li > a {
+      text-decoration: none;
+      color: black;
+    }
+    .menu1 > li:hover > .menu2 {
+      display: block;
+    }
+
+    .content1 {
+      width: 60%;
+    }
+    .left {
+      display: flex;
+    }
+    .left > img {
+      height: 450px;
+      width: 350px;
+      margin-right: 10px;
+    }
+    .div1 {
+      display: flex;
+      align-items: start;
+      margin: 10px 0px;
+    }
+    .div1 > img {
+      height: 100px;
+      width: 100px;
+      margin-right: 10px;
+    }
+    .div1 > a {
+      text-decoration: none;
+      color: black;
+    }
+
+    section {
+      display: flex;
+    }
+    .content2 {
+      display: flex;
+    }
+    .div2 {
+      width: 85%;
+      background-color: grey;
+      color: white;
+      font-weight: bold;
+      margin: 0px 5px;
+    }
+    .div2 > h4 {
+      padding: 0px;
+      margin: 0px;
+    }
+    .div2 > img {
+      width: 250px;
+      height: 180px;
+      margin: 20px 20px 0px 20px;
+    }
+    .div2 > p {
+      margin: 0px 20px;
+    }
+
+    .div3 {
+      text-align: center;
+      background-color: grey;
+      color: white;
+      font-weight: bold;
+      width: 60%;
+    }
+    .div3 > img {
+      width: 300px;
+      height: 200px;
+    }
+  </style>
+  <body>
+    <header>
+      <div>
+        <img src="content_de1.png" alt="" />
+        <p>Kiến tạo không gian Việt Thoáng Xanh</p>
+      </div>
+      <img src="content_de1.png" alt="" />
+    </header>
+
+    <nav>
+      <ul class="menu1">
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Biệt thự</a></li>
+        <li><a href="#">Nhà phố</a></li>
+        <li><a href="#">Nhà cấp 4</a></li>
+        <li><a href="#">Nhà ống</a></li>
+        <li><a href="#">Nhà vườn</a></li>
+        <li><a href="#">Nhà nông thôn</a></li>
+        <li>
+          <a href="#">Nội thất</a>
+          <ul class="menu2">
+            <li><a href="#">Nhà bếp</a></li>
+            <li><a href="#">Phòng ngủ</a></li>
+            <li><a href="#">Phòng khách</a></li>
+            <li><a href="#">Nhà tắm</a></li>
+            <li><a href="#">Cầu thang</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <section>
+      <div class="content1">
+        <h4>MẪU BIỆT THỰ</h4>
+        <div class="left">
+          <img src="content_de1.png" alt="" />
+          <div class="left2">
+            <div class="div1">
+              <img src="content_de1.png" alt="" />
+              <a href="#"
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Suscipit at vel dignissimos delectus cum.</a
+              >
+            </div>
+
+            <div class="div1">
+              <img src="content_de1.png" alt="" />
+              <a href="#"
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Suscipit at vel dignissimos delectus cum.</a
+              >
+            </div>
+
+            <div class="div1">
+              <img src="content_de1.png" alt="" />
+              <a href="#"
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Suscipit at vel dignissimos delectus cum.</a
+              >
+            </div>
+
+            <div class="div1">
+              <img src="content_de1.png" alt="" />
+              <a href="#"
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Suscipit at vel dignissimos delectus cum.</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content2">
+        <div>
+          <h4>MẪU NHÀ BẾP</h4>
+          <div class="div2">
+            <img src="content_de1.png" alt="" />
+            <p>Nội thất nhà bếp bằng gỗ mang phong cách mộc mạc...</p>
+            <img src="content_de1.png" alt="" />
+          </div>
+        </div>
+        <div class="div3">
+          <h5>Có mã giảm thêm đến 15%</h5>
+          <img src="content_de1.png" alt="" />
+          <h4>MUA NGAY</h4>
+          <img src="content_de1.png" alt="" />
+          <h4>MUA NGAY</h4>
+        </div>
+      </div>
+    </section>
+
+    <footer></footer>
+  </body>
+</html>
